@@ -1,0 +1,12 @@
+node_modules/
+pipeline/inbox/
+pipeline/ocr_out/
+pipeline/bin/
+.DS_Store
+
+osxphotos_crash.log
+
+# Pipeline intermediates — regenerated each run, may contain PII from raw OCR
+pipeline/candidates.json
+pipeline/candidates.enriched.json
+pipeline/skipped.json

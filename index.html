@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Watchlist — a private marquee</title>
+  <meta name="description" content="A personal watchlist. Movies, shows, games, books — kept in one place." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%8E%9E%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">◐</span>
+      <h1>Watchlist</h1>
+      <span class="brand-sub">a private marquee</span>
+    </div>
+    <div class="controls" role="toolbar" aria-label="Filters and actions">
+      <label class="field field-search">
+        <span class="field-label">find</span>
+        <input id="q" type="search" placeholder="title, tag, anything…" autocomplete="off" />
+      </label>
+      <label class="field">
+        <span class="field-label">type</span>
+        <select id="type">
+          <option value="">all</option>
+          <option>movie</option>
+          <option>show</option>
+          <option>game</option>
+          <option>book</option>
+          <option>music</option>
+          <option>recipe</option>
+          <option>venue</option>
+          <option>purchase</option>
+          <option>project</option>
+          <option>other</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">status</span>
+        <select id="status">
+          <option value="">any</option>
+          <option value="todo">to watch</option>
+          <option value="active">in progress</option>
+          <option value="done">done</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">sort</span>
+        <select id="sort">
+          <option value="added-desc">newest first</option>
+          <option value="added-asc">oldest first</option>
+          <option value="title-asc">title a–z</option>
+          <option value="title-desc">title z–a</option>
+          <option value="year-desc">year ↓</option>
+          <option value="year-asc">year ↑</option>
+          <option value="type">by type</option>
+        </select>
+      </label>
+      <div class="actions">
+        <button id="add" class="btn btn-primary" type="button"><span aria-hidden="true">+</span> Add</button>
+        <button id="export" class="btn" type="button">Export</button>
+        <label class="btn import">
+          <input id="import" type="file" accept="application/json" hidden />
+          Import
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main id="grid" class="grid" aria-live="polite" aria-label="Watchlist items"></main>
+
+  <template id="card-tpl">
+    <article class="card" draggable="true" data-status="todo">
+      <div class="poster">
+        <div class="poster-placeholder" aria-hidden="true">
+          <span class="placeholder-glyph"></span>
+          <span class="placeholder-title"></span>
+        </div>
+        <img loading="lazy" alt="" />
+        <div class="scrim" aria-hidden="true"></div>
+        <span class="type"></span>
+        <button class="del" type="button" title="Delete" aria-label="Delete">×</button>
+      </div>
+      <div class="meta">
+        <div class="meta-head">
+          <h2 class="title" contenteditable="true" spellcheck="false"></h2>
+          <span class="year"></span>
+        </div>
+        <p class="blurb" contenteditable="true"></p>
+        <div class="row">
+          <select class="status" aria-label="Status">
+            <option value="todo">to watch</option>
+            <option value="active">in progress</option>
+            <option value="done">done</option>
+          </select>
+          <a class="meta-link" href="#" target="_blank" rel="noopener noreferrer" title="Open external link" aria-label="External link">↗</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <footer class="footer">
+    <span class="count" id="count" aria-live="polite"></span>
+    <span class="dot">·</span>
+    <span class="footer-note">drag to reorder · click title or blurb to edit</span>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
