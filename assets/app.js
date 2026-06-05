@@ -16,7 +16,7 @@ let items = [];
    This is a deterrent, not real security (the hash is public) — but on a
    static site the canonical data is read-only to guests anyway. Change the
    passphrase by replacing OWNER_HASH with: printf '%s' 'newphrase' | shasum -a 256 */
-const OWNER_HASH = '057ba03d6c44104863dc7361fe4578965d1887360f90a0895882e58a6248fc86'; /* default: "changeme" */
+const OWNER_HASH = '73ed39e720cb63bd270d9610e8617f8f2fef3ef1ab5deb62832feb9b7ce929b5'; /* set by owner */
 let isOwner = localStorage.getItem(LS_OWNER) === '1';
 
 async function sha256(str) {
@@ -327,11 +327,15 @@ function enableDrag(node) {
 }
 
 /* ---------- ADD (owner) / SUGGEST (guest) ---------- */
-const REPO_SLUG = 'adamaragon/watchlist';
+/* Formsubmit.co — no account/key. On the FIRST submission it emails a
+   one-time activation link to this address; click it once and suggestions
+   flow thereafter. To hide the address from page source, swap this for the
+   random alias Formsubmit gives you after activation. */
+const SUGGEST_ENDPOINT = 'https://formsubmit.co/ajax/adam@threesided.com';
+
 function addManual() {
-  const title = prompt(isOwner ? 'Title to add?' : 'Suggest a title:');
-  if (!title) return;
   if (isOwner) {
+    const title = prompt('Title to add?'); if (!title) return;
     items.unshift({
       id: 'm-' + Date.now().toString(36),
       title, type: 'other', status: 'todo',
@@ -340,11 +344,47 @@ function addManual() {
     });
     persist(); populateTypeFilter(); render();
   } else {
-    /* guests can't write the shared data — file a suggestion as a GitHub issue */
-    const url = `https://github.com/${REPO_SLUG}/issues/new?title=`
-      + encodeURIComponent('Suggestion: ' + title)
-      + '&body=' + encodeURIComponent('Please add: ' + title);
-    window.open(url, '_blank', 'noopener');
+    openSuggest();
+  }
+}
+
+/* ---------- SUGGESTION MODAL (guests) ---------- */
+const suggestModal = $('#suggest-modal');
+function openSuggest() {
+  $('#suggest-title').value = '';
+  $('#suggest-note').value = '';
+  $('#suggest-msg').textContent = '';
+  $('#suggest-send').disabled = false;
+  suggestModal.hidden = false;
+  $('#suggest-title').focus();
+}
+function closeSuggest() { suggestModal.hidden = true; }
+async function sendSuggest() {
+  const title = $('#suggest-title').value.trim();
+  const note  = $('#suggest-note').value.trim();
+  const msg   = $('#suggest-msg');
+  if (!title) { msg.textContent = 'Please enter a title.'; return; }
+  $('#suggest-send').disabled = true;
+  msg.textContent = 'Sending…';
+  try {
+    const r = await fetch(SUGGEST_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        _subject: 'Watchlist suggestion: ' + title,
+        title, note: note || '(none)', _captcha: 'false',
+      }),
+    });
+    if (r.ok) {
+      msg.textContent = '✓ Sent — thanks!';
+      setTimeout(closeSuggest, 1200);
+    } else {
+      msg.textContent = 'Could not send (try again later).';
+      $('#suggest-send').disabled = false;
+    }
+  } catch {
+    msg.textContent = 'Network error — try again later.';
+    $('#suggest-send').disabled = false;
   }
 }
 
@@ -395,5 +435,10 @@ $('#add').addEventListener('click', addManual);
 $('#export').addEventListener('click', exportJson);
 $('#import').addEventListener('change', e => e.target.files[0] && importJson(e.target.files[0]));
 $('#lock').addEventListener('click', toggleOwner);
+$('#suggest-send').addEventListener('click', sendSuggest);
+$('#suggest-cancel').addEventListener('click', closeSuggest);
+suggestModal.addEventListener('click', e => { if (e.target === suggestModal) closeSuggest(); });
+$('#suggest-title').addEventListener('keydown', e => { if (e.key === 'Enter') sendSuggest(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !suggestModal.hidden) closeSuggest(); });
 
 await load(); populateTypeFilter(); applyOwnerMode(); render();

@@ -104,6 +104,20 @@
     </article>
   </template>
 
+  <div id="suggest-modal" class="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="suggest-h">
+      <h3 id="suggest-h">Suggest a title</h3>
+      <p class="modal-sub">Send a movie, show, game, or book to add to the list.</p>
+      <input id="suggest-title" type="text" placeholder="Title (and year, if you know it)" autocomplete="off" />
+      <textarea id="suggest-note" rows="2" placeholder="Optional note — why, or where to find it"></textarea>
+      <div class="modal-actions">
+        <button id="suggest-cancel" class="btn" type="button">Cancel</button>
+        <button id="suggest-send" class="btn btn-primary" type="button">Send</button>
+      </div>
+      <p id="suggest-msg" class="modal-msg" aria-live="polite"></p>
+    </div>
+  </div>
+
   <footer class="footer">
     <span class="count" id="count" aria-live="polite"></span>
     <span class="dot">·</span>
