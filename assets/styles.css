@@ -438,6 +438,19 @@ body[data-owner="false"] .owner-only { display: none; }
 }
 .year:empty { display: none; }
 
+.byline {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+  opacity: 0.85;
+  margin: -2px 0 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.byline:empty { display: none; }
+
 .blurb {
   font-size: 13px;
   line-height: 1.45;

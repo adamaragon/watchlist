@@ -1,6 +1,6 @@
 import { applyFilters } from './lib/filters.js';
 
-const LS_KEY      = 'watchlist.v7';   /* bumped: 100% posters, rating/verdict system, owner gate */
+const LS_KEY      = 'watchlist.v8';   /* bumped: 100% posters, rating/verdict system, owner gate */
 const LS_SORT_KEY = 'watchlist.sort';
 const LS_OWNER    = 'watchlist.owner';
 const $ = (s, r=document) => r.querySelector(s);
@@ -231,6 +231,11 @@ function card(it) {
   $('.title', node).contentEditable = isOwner ? 'true' : 'false';
   $('.blurb', node).contentEditable = isOwner ? 'true' : 'false';
   $('.status', node).disabled = !isOwner;
+
+  /* byline (author) */
+  const bylineEl = $('.byline', node);
+  if (it.author) bylineEl.textContent = it.author;
+  else bylineEl.remove();
 
   /* genre chips (from tags) — click to filter */
   const genresEl = $('.genres', node);
