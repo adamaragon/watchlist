@@ -244,11 +244,11 @@ body {
   display: flex;
   flex-direction: column;
   background: transparent;
-  cursor: grab;
   transition: transform .35s var(--ease);
   isolation: isolate;
 }
-.card:active { cursor: grabbing; }
+body[data-owner="true"] .card { cursor: grab; }
+body[data-owner="true"] .card:active { cursor: grabbing; }
 
 .poster {
   position: relative;

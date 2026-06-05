@@ -32,6 +32,10 @@ function applyOwnerMode() {
   }
   const addBtn = $('#add');
   if (addBtn) addBtn.querySelector('.add-label').textContent = isOwner ? 'Add' : 'Suggest';
+  const note = $('.footer-note');
+  if (note) note.textContent = isOwner
+    ? 'drag to reorder · click title or blurb to edit · 👍/👎 to rate'
+    : 'browse · filter · suggest a title';
 }
 async function toggleOwner() {
   if (isOwner) { isOwner = false; localStorage.removeItem(LS_OWNER); applyOwnerMode(); render(); return; }
@@ -217,10 +221,13 @@ function card(it) {
   /* type badge */
   $('.type', node).textContent = type;
 
-  /* year + title + blurb */
+  /* year + title + blurb (inline-edit is owner-only) */
   $('.year',  node).textContent = it.year || '';
   $('.title', node).textContent = it.title;
   $('.blurb', node).textContent = it.blurb || '';
+  $('.title', node).contentEditable = isOwner ? 'true' : 'false';
+  $('.blurb', node).contentEditable = isOwner ? 'true' : 'false';
+  $('.status', node).disabled = !isOwner;
 
   /* genre chips (from tags) — click to filter */
   const genresEl = $('.genres', node);
@@ -281,7 +288,12 @@ function card(it) {
     if (e.key === 'Enter') { e.preventDefault(); $('.blurb', node).focus(); }
   });
 
-  enableDrag(node);
+  /* drag-to-reorder is owner-only */
+  if (isOwner) {
+    enableDrag(node);
+  } else {
+    node.draggable = false;
+  }
   return node;
 }
 
