@@ -49,7 +49,7 @@ async function toggleOwner() {
 }
 
 /* ---------- VERDICTS (non-destructive ratings) ---------- */
-const VERDICTS = { up: 'liked', down: 'disliked', skip: 'not interested' };
+const VERDICTS = { love: 'loved', up: 'liked', down: 'disliked', skip: 'not interested' };
 
 /* section order + plural labels for the grouped view */
 const TYPE_ORDER = ['movie','show','game','book','music','recipe','venue','purchase','project','other'];
@@ -112,15 +112,16 @@ function render() {
   grid.replaceChildren();
 
   /* partition by verdict */
-  const watch = [], liked = [], disliked = [], skipped = [];
+  const watch = [], loved = [], liked = [], disliked = [], skipped = [];
   for (const it of view) {
-    if (it.verdict === 'up') liked.push(it);
+    if (it.verdict === 'love') loved.push(it);
+    else if (it.verdict === 'up') liked.push(it);
     else if (it.verdict === 'down') disliked.push(it);
     else if (it.verdict === 'skip') skipped.push(it);
     else watch.push(it);
   }
 
-  const visibleCount = watch.length + liked.length + disliked.length + (isOwner ? skipped.length : 0);
+  const visibleCount = watch.length + loved.length + liked.length + disliked.length + (isOwner ? skipped.length : 0);
   if (visibleCount === 0) {
     const empty = document.createElement('div');
     empty.className = 'empty-state';
@@ -143,7 +144,9 @@ function render() {
       const list = groups.get(t);
       if (list && list.length) grid.appendChild(buildSection(TYPE_LABEL[t] || t, list, { type: t }));
     }
-    /* 2) Seen it — Liked it */
+    /* 2) Seen it — Loved it */
+    if (loved.length) grid.appendChild(buildSection('Seen It · Loved It', loved, { seen: 'loved', glyph: '⭐' }));
+    /* 3) Seen it — Liked it */
     if (liked.length) grid.appendChild(buildSection('Seen It · Liked It', liked, { seen: 'liked', glyph: '👍' }));
     /* 3) Seen it — Did Not Like (collapsed by default) */
     if (disliked.length) grid.appendChild(buildSection('Seen It · Did Not Like', disliked, { seen: 'disliked', glyph: '👎', collapsed: true }));
@@ -279,6 +282,7 @@ function card(it) {
     persist();
     render();
   };
+  $('.v-love', node).addEventListener('click', () => setVerdict('love'));
   $('.v-up',   node).addEventListener('click', () => setVerdict('up'));
   $('.v-down', node).addEventListener('click', () => setVerdict('down'));
   $('.v-skip', node).addEventListener('click', () => setVerdict('skip'));

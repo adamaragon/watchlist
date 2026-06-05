@@ -378,12 +378,17 @@ body[data-owner="false"] .verdict { display: none; }   /* guests can't rate */
 }
 .verdict button:hover { transform: scale(1.12); filter: grayscale(0); background: rgba(13,11,16,0.92); }
 /* highlight the active verdict (and keep it visible even when not hovering) */
+.card[data-verdict="love"] .verdict,
 .card[data-verdict="up"]   .verdict,
 .card[data-verdict="down"] .verdict,
 .card[data-verdict="skip"] .verdict { opacity: 1; transform: translateY(0); }
+.card[data-verdict="love"] .v-love { background: #5a4410; border-color: var(--gold); filter: none; box-shadow: 0 0 10px rgba(217,178,106,0.5); }
 .card[data-verdict="up"]   .v-up   { background: #1f5e2a; border-color: #5bbf6e; filter: none; }
 .card[data-verdict="down"] .v-down { background: #6e2014; border-color: #e8754a; filter: none; }
 .card[data-verdict="skip"] .v-skip { background: #3a3340; border-color: var(--muted); filter: none; }
+/* Loved section header gets a gold tint */
+.type-section[data-seen="loved"] .section-name { color: var(--gold); }
+.type-section[data-seen="loved"] { border-left: 2px solid var(--gold); padding-left: 16px; margin-left: -18px; }
 
 /* owner-only chrome (Export/Import) hidden for guests */
 body[data-owner="false"] .owner-only { display: none; }
