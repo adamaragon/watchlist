@@ -1,6 +1,6 @@
 import { applyFilters } from './lib/filters.js';
 
-const LS_KEY      = 'watchlist.v1';
+const LS_KEY      = 'watchlist.v2';   /* bumped: 134 -> 412 items + genres/summaries; ignore stale v1 cache */
 const LS_SORT_KEY = 'watchlist.sort';
 const $ = (s, r=document) => r.querySelector(s);
 const grid    = $('#grid');
@@ -118,6 +118,31 @@ function card(it) {
   $('.year',  node).textContent = it.year || '';
   $('.title', node).textContent = it.title;
   $('.blurb', node).textContent = it.blurb || '';
+
+  /* genre chips (from tags) — click to filter */
+  const genresEl = $('.genres', node);
+  const tags = Array.isArray(it.tags) ? it.tags : [];
+  if (tags.length) {
+    for (const g of tags) {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'chip';
+      chip.textContent = g;
+      chip.title = `Filter by “${g}”`;
+      chip.addEventListener('click', () => { $('#q').value = g; render(); });
+      genresEl.appendChild(chip);
+    }
+  } else {
+    genresEl.remove();
+  }
+
+  /* summary unfold */
+  const summaryEl = $('.summary', node);
+  if (it.summary) {
+    $('.summary-text', summaryEl).textContent = it.summary;
+  } else {
+    summaryEl.remove();
+  }
 
   /* status select */
   const sel = $('.status', node);

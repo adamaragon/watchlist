@@ -437,6 +437,62 @@ body {
 .meta-link:hover { background: var(--surface-2); color: var(--text); border-color: var(--muted); }
 .card[data-has-link="true"] .meta-link { display: flex; }
 
+/* ---------- GENRE CHIPS ---------- */
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 2px;
+}
+.chip {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 3px 9px;
+  cursor: pointer;
+  line-height: 1.2;
+  transition: color .18s var(--ease), border-color .18s var(--ease), background .18s var(--ease);
+}
+.chip:hover { color: var(--text); border-color: var(--accent); background: var(--surface-2); }
+.chip:active { transform: translateY(1px); }
+
+/* ---------- SUMMARY UNFOLD ---------- */
+.summary { margin-top: 2px; }
+.summary > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  user-select: none;
+  padding: 2px 0;
+  transition: color .18s var(--ease);
+}
+.summary > summary::-webkit-details-marker { display: none; }
+.summary > summary:hover { color: var(--accent); }
+.summary-caret { transition: transform .2s var(--ease); font-size: 9px; }
+.summary[open] > summary { color: var(--text); }
+.summary[open] .summary-caret { transform: rotate(180deg); }
+.summary-text {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 6px 0 2px;
+  padding-left: 10px;
+  border-left: 2px solid var(--line);
+  animation: card-in .25s var(--ease) both;
+}
+
 /* ---------- HOVER DELIGHT ---------- */
 .card:hover .poster {
   box-shadow: var(--shadow-hover);
