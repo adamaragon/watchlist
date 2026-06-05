@@ -1,6 +1,6 @@
 import { applyFilters } from './lib/filters.js';
 
-const LS_KEY      = 'watchlist.v2';   /* bumped: 134 -> 412 items + genres/summaries; ignore stale v1 cache */
+const LS_KEY      = 'watchlist.v3';   /* bumped: sectioned view + 875 items + backfilled posters; ignore stale cache */
 const LS_SORT_KEY = 'watchlist.sort';
 const $ = (s, r=document) => r.querySelector(s);
 const grid    = $('#grid');
@@ -9,6 +9,13 @@ const countEl = $('#count');
 const sortEl  = $('#sort');
 
 let items = [];
+
+/* section order + plural labels for the grouped view */
+const TYPE_ORDER = ['movie','show','game','book','music','recipe','venue','purchase','project','other'];
+const TYPE_LABEL = {
+  movie:'Movies', show:'Shows', game:'Games', book:'Books', music:'Music',
+  recipe:'Recipes', venue:'Venues', purchase:'Purchases', project:'Projects', other:'Other',
+};
 
 /* ---------- TYPE METADATA ---------- */
 const TYPE_META = {
@@ -74,7 +81,29 @@ function render() {
     `;
     grid.appendChild(empty);
   } else {
-    for (const it of view) grid.appendChild(card(it));
+    /* group into per-type sections; only non-empty sections render, so
+       filtering by type collapses to a single relevant section */
+    const groups = new Map();
+    for (const it of view) {
+      const t = it.type || 'other';
+      (groups.get(t) || groups.set(t, []).get(t)).push(it);
+    }
+    const order = [...TYPE_ORDER, ...[...groups.keys()].filter(t => !TYPE_ORDER.includes(t))];
+    for (const t of order) {
+      const list = groups.get(t);
+      if (!list || !list.length) continue;
+      const section = document.createElement('section');
+      section.className = 'type-section';
+      section.dataset.type = t;
+      const head = document.createElement('h2');
+      head.className = 'section-head';
+      head.innerHTML = `<span class="section-name">${TYPE_LABEL[t] || t}</span><span class="section-count">${list.length}</span>`;
+      const sgrid = document.createElement('div');
+      sgrid.className = 'section-grid';
+      for (const it of list) sgrid.appendChild(card(it));
+      section.append(head, sgrid);
+      grid.appendChild(section);
+    }
   }
 
   if (countEl) {
@@ -241,8 +270,27 @@ function exportJson() {
 
 async function importJson(file) {
   const txt = await file.text();
-  try { items = JSON.parse(txt); persist(); render(); }
+  try { items = JSON.parse(txt); persist(); populateTypeFilter(); render(); }
   catch { alert('Import failed: not valid JSON'); }
+}
+
+/* ---------- DYNAMIC TYPE FILTER (only types present in data) ---------- */
+function populateTypeFilter() {
+  const sel = $('#type');
+  const present = new Set(items.map(i => i.type || 'other'));
+  const ordered = [...TYPE_ORDER.filter(t => present.has(t)),
+                   ...[...present].filter(t => !TYPE_ORDER.includes(t))];
+  const current = sel.value;
+  sel.replaceChildren();
+  const all = document.createElement('option');
+  all.value = ''; all.textContent = 'all';
+  sel.appendChild(all);
+  for (const t of ordered) {
+    const o = document.createElement('option');
+    o.value = t; o.textContent = t;
+    sel.appendChild(o);
+  }
+  if (present.has(current)) sel.value = current; else sel.value = '';
 }
 
 /* ---------- WIRE UP ---------- */
@@ -258,4 +306,4 @@ $('#add').addEventListener('click', addManual);
 $('#export').addEventListener('click', exportJson);
 $('#import').addEventListener('change', e => e.target.files[0] && importJson(e.target.files[0]));
 
-await load(); render();
+await load(); populateTypeFilter(); render();
