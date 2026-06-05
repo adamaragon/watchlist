@@ -1,6 +1,6 @@
 import { applyFilters } from './lib/filters.js';
 
-const LS_KEY      = 'watchlist.v8';   /* bumped: 100% posters, rating/verdict system, owner gate */
+const LS_KEY      = 'watchlist.v9';   /* bumped: 100% posters, rating/verdict system, owner gate */
 const LS_SORT_KEY = 'watchlist.sort';
 const LS_OWNER    = 'watchlist.owner';
 const $ = (s, r=document) => r.querySelector(s);
