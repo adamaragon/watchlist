@@ -1,7 +1,8 @@
 import { applyFilters } from './lib/filters.js';
 
-const LS_KEY      = 'watchlist.v4';   /* bumped: poster backfill 871/875 (foreign-title + AniList + Wikipedia fixes) */
+const LS_KEY      = 'watchlist.v5';   /* bumped: 100% posters, rating/verdict system, owner gate */
 const LS_SORT_KEY = 'watchlist.sort';
+const LS_OWNER    = 'watchlist.owner';
 const $ = (s, r=document) => r.querySelector(s);
 const grid    = $('#grid');
 const tpl     = $('#card-tpl');
@@ -9,6 +10,42 @@ const countEl = $('#count');
 const sortEl  = $('#sort');
 
 let items = [];
+
+/* ---------- OWNER GATE ----------
+   Light client-side gate: rating is owner-only; guests browse/filter/suggest.
+   This is a deterrent, not real security (the hash is public) — but on a
+   static site the canonical data is read-only to guests anyway. Change the
+   passphrase by replacing OWNER_HASH with: printf '%s' 'newphrase' | shasum -a 256 */
+const OWNER_HASH = '057ba03d6c44104863dc7361fe4578965d1887360f90a0895882e58a6248fc86'; /* default: "changeme" */
+let isOwner = localStorage.getItem(LS_OWNER) === '1';
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+function applyOwnerMode() {
+  document.body.dataset.owner = isOwner ? 'true' : 'false';
+  const lock = $('#lock');
+  if (lock) {
+    lock.textContent = isOwner ? '🔓 Owner' : '🔒 Guest';
+    lock.title = isOwner ? 'Owner mode — click to lock' : 'Guest mode — click to unlock rating';
+  }
+  const addBtn = $('#add');
+  if (addBtn) addBtn.querySelector('.add-label').textContent = isOwner ? 'Add' : 'Suggest';
+}
+async function toggleOwner() {
+  if (isOwner) { isOwner = false; localStorage.removeItem(LS_OWNER); applyOwnerMode(); render(); return; }
+  const phrase = prompt('Enter owner passphrase to enable rating:');
+  if (phrase == null) return;
+  if (await sha256(phrase) === OWNER_HASH) {
+    isOwner = true; localStorage.setItem(LS_OWNER, '1'); applyOwnerMode(); render();
+  } else {
+    alert('Incorrect passphrase.');
+  }
+}
+
+/* ---------- VERDICTS (non-destructive ratings) ---------- */
+const VERDICTS = { up: 'liked', down: 'disliked', skip: 'not interested' };
 
 /* section order + plural labels for the grouped view */
 const TYPE_ORDER = ['movie','show','game','book','music','recipe','venue','purchase','project','other'];
@@ -70,7 +107,17 @@ function render() {
   const view = applySort(filtered);
   grid.replaceChildren();
 
-  if (view.length === 0) {
+  /* partition by verdict */
+  const watch = [], liked = [], disliked = [], skipped = [];
+  for (const it of view) {
+    if (it.verdict === 'up') liked.push(it);
+    else if (it.verdict === 'down') disliked.push(it);
+    else if (it.verdict === 'skip') skipped.push(it);
+    else watch.push(it);
+  }
+
+  const visibleCount = watch.length + liked.length + disliked.length + (isOwner ? skipped.length : 0);
+  if (visibleCount === 0) {
     const empty = document.createElement('div');
     empty.className = 'empty-state';
     const isFiltered = q.q || q.type || q.status;
@@ -81,39 +128,65 @@ function render() {
     `;
     grid.appendChild(empty);
   } else {
-    /* group into per-type sections; only non-empty sections render, so
-       filtering by type collapses to a single relevant section */
+    /* 1) Watchlist proper — grouped into per-type sections */
     const groups = new Map();
-    for (const it of view) {
+    for (const it of watch) {
       const t = it.type || 'other';
       (groups.get(t) || groups.set(t, []).get(t)).push(it);
     }
     const order = [...TYPE_ORDER, ...[...groups.keys()].filter(t => !TYPE_ORDER.includes(t))];
     for (const t of order) {
       const list = groups.get(t);
-      if (!list || !list.length) continue;
-      const section = document.createElement('section');
-      section.className = 'type-section';
-      section.dataset.type = t;
-      const head = document.createElement('h2');
-      head.className = 'section-head';
-      head.innerHTML = `<span class="section-name">${TYPE_LABEL[t] || t}</span><span class="section-count">${list.length}</span>`;
-      const sgrid = document.createElement('div');
-      sgrid.className = 'section-grid';
-      for (const it of list) sgrid.appendChild(card(it));
-      section.append(head, sgrid);
-      grid.appendChild(section);
+      if (list && list.length) grid.appendChild(buildSection(TYPE_LABEL[t] || t, list, { type: t }));
     }
+    /* 2) Seen it — Liked it */
+    if (liked.length) grid.appendChild(buildSection('Seen It · Liked It', liked, { seen: 'liked', glyph: '👍' }));
+    /* 3) Seen it — Did Not Like (collapsed by default) */
+    if (disliked.length) grid.appendChild(buildSection('Seen It · Did Not Like', disliked, { seen: 'disliked', glyph: '👎', collapsed: true }));
+    /* 4) Not Interested — owner only, collapsed (kept in db, hidden from guests) */
+    if (isOwner && skipped.length) grid.appendChild(buildSection('Not Interested', skipped, { seen: 'skip', glyph: '🚫', collapsed: true }));
   }
 
   if (countEl) {
     const total = items.length;
-    if (view.length === total) {
-      countEl.textContent = `${total} item${total !== 1 ? 's' : ''}`;
-    } else {
-      countEl.textContent = `${view.length} of ${total} item${total !== 1 ? 's' : ''}`;
-    }
+    countEl.textContent = visibleCount === total
+      ? `${total} item${total !== 1 ? 's' : ''}`
+      : `${visibleCount} of ${total} item${total !== 1 ? 's' : ''}`;
   }
+}
+
+/* build one section (a <section> with header + grid). Collapsed sections use <details>. */
+function buildSection(label, list, opts = {}) {
+  const cards = document.createDocumentFragment();
+  for (const it of list) cards.appendChild(card(it));
+  const headInner = `<span class="section-name">${opts.glyph ? opts.glyph + ' ' : ''}${label}</span><span class="section-count">${list.length}</span>`;
+
+  if (opts.collapsed) {
+    const det = document.createElement('details');
+    det.className = 'type-section seen-section';
+    if (opts.seen) det.dataset.seen = opts.seen;
+    const sum = document.createElement('summary');
+    sum.className = 'section-head';
+    sum.innerHTML = headInner + '<span class="section-caret" aria-hidden="true">▾</span>';
+    const sgrid = document.createElement('div');
+    sgrid.className = 'section-grid';
+    sgrid.appendChild(cards);
+    det.append(sum, sgrid);
+    return det;
+  }
+
+  const section = document.createElement('section');
+  section.className = 'type-section';
+  if (opts.type) section.dataset.type = opts.type;
+  if (opts.seen) section.dataset.seen = opts.seen;
+  const head = document.createElement('h2');
+  head.className = 'section-head';
+  head.innerHTML = headInner;
+  const sgrid = document.createElement('div');
+  sgrid.className = 'section-grid';
+  sgrid.appendChild(cards);
+  section.append(head, sgrid);
+  return section;
 }
 
 /* ---------- CARD ---------- */
@@ -128,6 +201,7 @@ function card(it) {
   node.dataset.type     = type;
   node.dataset.hasPoster = hasPoster ? 'true' : 'false';
   node.dataset.hasLink  = hasLink ? 'true' : 'false';
+  node.dataset.verdict  = it.verdict || '';
 
   /* poster or placeholder */
   const img = $('.poster img', node);
@@ -192,10 +266,15 @@ function card(it) {
   $('.title', node).addEventListener('input', e => { it.title = e.target.textContent.trim(); persist(); });
   $('.blurb', node).addEventListener('input', e => { it.blurb = e.target.textContent.trim(); persist(); });
 
-  /* delete */
-  $('.del', node).addEventListener('click', () => {
-    items = items.filter(x => x.id !== it.id); persist(); render();
-  });
+  /* verdict (non-destructive rating) — owner only, wired via CSS visibility */
+  const setVerdict = v => {
+    it.verdict = (it.verdict === v) ? null : v;  /* click active again -> back to watchlist */
+    persist();
+    render();
+  };
+  $('.v-up',   node).addEventListener('click', () => setVerdict('up'));
+  $('.v-down', node).addEventListener('click', () => setVerdict('down'));
+  $('.v-skip', node).addEventListener('click', () => setVerdict('skip'));
 
   /* keyboard: Enter on title moves focus to blurb */
   $('.title', node).addEventListener('keydown', e => {
@@ -247,16 +326,26 @@ function enableDrag(node) {
   });
 }
 
-/* ---------- ADD ---------- */
+/* ---------- ADD (owner) / SUGGEST (guest) ---------- */
+const REPO_SLUG = 'adamaragon/watchlist';
 function addManual() {
-  const title = prompt('Title?'); if (!title) return;
-  items.unshift({
-    id: 'm-' + Date.now().toString(36),
-    title, type: 'other', status: 'todo',
-    blurb: '', year: null, poster: '', link: '', tags: [], notes: '', rating: null,
-    added: new Date().toISOString().slice(0,10),
-  });
-  persist(); render();
+  const title = prompt(isOwner ? 'Title to add?' : 'Suggest a title:');
+  if (!title) return;
+  if (isOwner) {
+    items.unshift({
+      id: 'm-' + Date.now().toString(36),
+      title, type: 'other', status: 'todo',
+      blurb: '', year: null, poster: '', link: '', tags: [], notes: '', rating: null,
+      verdict: null, added: new Date().toISOString().slice(0,10),
+    });
+    persist(); populateTypeFilter(); render();
+  } else {
+    /* guests can't write the shared data — file a suggestion as a GitHub issue */
+    const url = `https://github.com/${REPO_SLUG}/issues/new?title=`
+      + encodeURIComponent('Suggestion: ' + title)
+      + '&body=' + encodeURIComponent('Please add: ' + title);
+    window.open(url, '_blank', 'noopener');
+  }
 }
 
 /* ---------- EXPORT / IMPORT ---------- */
@@ -305,5 +394,6 @@ sortEl.addEventListener('change', () => {
 $('#add').addEventListener('click', addManual);
 $('#export').addEventListener('click', exportJson);
 $('#import').addEventListener('change', e => e.target.files[0] && importJson(e.target.files[0]));
+$('#lock').addEventListener('click', toggleOwner);
 
-await load(); populateTypeFilter(); render();
+await load(); populateTypeFilter(); applyOwnerMode(); render();
