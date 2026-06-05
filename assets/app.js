@@ -1,6 +1,6 @@
 import { applyFilters } from './lib/filters.js';
 
-const LS_KEY      = 'watchlist.v3';   /* bumped: sectioned view + 875 items + backfilled posters; ignore stale cache */
+const LS_KEY      = 'watchlist.v4';   /* bumped: poster backfill 871/875 (foreign-title + AniList + Wikipedia fixes) */
 const LS_SORT_KEY = 'watchlist.sort';
 const $ = (s, r=document) => r.querySelector(s);
 const grid    = $('#grid');
