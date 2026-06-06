@@ -1,15 +1,17 @@
-/* Guest voting via Airtable REST (no backend/proxy).
- * One vote per browser per item (tracked in localStorage with the record id,
- * so a change PATCHes and a retract DELETEs — keeps tallies clean). */
-import { AIRTABLE } from './airtable-config.js?v=16';
+/* Guest voting via the Cloudflare Worker (token never reaches the browser).
+ * One vote per browser per item, tracked in localStorage with the Airtable
+ * record id so a change PATCHes and a retract DELETEs — keeping tallies clean. */
+import { AIRTABLE } from './airtable-config.js?v=18';
 
 const LSV = 'watchlist.votes';
-const enabled = () => !!(AIRTABLE.PAT && AIRTABLE.BASE);
-const apiBase = () => `https://api.airtable.com/v0/${AIRTABLE.BASE}/${encodeURIComponent(AIRTABLE.VOTES_TABLE)}`;
-const hdr = () => ({ 'Authorization': `Bearer ${AIRTABLE.PAT}`, 'Content-Type': 'application/json' });
+const api = () => (AIRTABLE.WORKER_URL || '').replace(/\/$/, '');
+const enabled = () => !!api();
 
 function localVotes() { try { return JSON.parse(localStorage.getItem(LSV) || '{}'); } catch { return {}; } }
 function saveLocal(v) { localStorage.setItem(LSV, JSON.stringify(v)); }
+function post(body) {
+  return fetch(`${api()}/vote`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+}
 
 export function isVotingEnabled() { return enabled(); }
 export function myVote(id) { return (localVotes()[id] || {}).vote || null; }
@@ -21,17 +23,15 @@ export async function castVote(item, vote) {
   const cur = lv[item.id];
   try {
     if (cur && cur.recordId) {
-      if (vote === null || vote === cur.vote) {        // same click -> retract
-        await fetch(`${apiBase()}/${cur.recordId}`, { method: 'DELETE', headers: hdr() });
+      if (vote === null || vote === cur.vote) {          // same click -> retract
+        await post({ op: 'delete', recordId: cur.recordId });
         delete lv[item.id]; saveLocal(lv); return null;
       }
-      await fetch(`${apiBase()}/${cur.recordId}`, { method: 'PATCH', headers: hdr(),
-        body: JSON.stringify({ fields: { Vote: vote } }) });
+      await post({ op: 'update', recordId: cur.recordId, vote });
       lv[item.id] = { vote, recordId: cur.recordId }; saveLocal(lv); return vote;
     }
     if (vote) {
-      const r = await fetch(apiBase(), { method: 'POST', headers: hdr(),
-        body: JSON.stringify({ fields: { item_id: item.id, Title: item.title, Vote: vote } }) });
+      const r = await post({ op: 'create', item_id: item.id, title: item.title, vote });
       const j = await r.json();
       if (j && j.id) { lv[item.id] = { vote, recordId: j.id }; saveLocal(lv); return vote; }
     }
@@ -42,24 +42,9 @@ export async function castVote(item, vote) {
 /* Returns { item_id: {up, down, net} } across all vote records. */
 export async function fetchTallies() {
   if (!enabled()) return {};
-  const tally = {};
-  let offset = '';
   try {
-    do {
-      const url = `${apiBase()}?pageSize=100${offset ? `&offset=${offset}` : ''}`;
-      const r = await fetch(url, { headers: { 'Authorization': `Bearer ${AIRTABLE.PAT}` } });
-      if (!r.ok) break;
-      const j = await r.json();
-      for (const rec of j.records || []) {
-        const f = rec.fields || {};
-        const id = f.item_id; if (!id) continue;
-        (tally[id] = tally[id] || { up: 0, down: 0 });
-        if (f.Vote === 'up') tally[id].up++;
-        else if (f.Vote === 'down') tally[id].down++;
-      }
-      offset = j.offset || '';
-    } while (offset);
-  } catch (e) { /* offline -> empty */ }
-  for (const k in tally) tally[k].net = tally[k].up - tally[k].down;
-  return tally;
+    const r = await fetch(`${api()}/tallies`);
+    if (!r.ok) return {};
+    return await r.json();
+  } catch (e) { return {}; }
 }

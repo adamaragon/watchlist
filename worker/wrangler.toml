@@ -1,0 +1,18 @@
+name = "watchlist-votes"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Non-secret config. Secrets are set separately:
+#   npx wrangler secret put AIRTABLE_PAT
+#   npx wrangler secret put CRON_KEY
+[vars]
+AIRTABLE_BASE = "appiRs5WrwZtOds9u"
+VOTES_TABLE = "Votes"
+WATCHLIST_TABLE = "Watchlist"
+DATA_URL = "https://adamaragon.github.io/watchlist/data.json"
+ALLOW_ORIGIN = "https://adamaragon.github.io"
+
+# NOTE: no cron here. The full data.json->Watchlist sync is 155 Airtable
+# batches, over Cloudflare's free 50-subrequest/invocation limit. The daily
+# backup runs in GitHub Actions instead (scripts/airtable_sync.py). The gated
+# POST /backup route remains for manual/Workers-Paid use.
