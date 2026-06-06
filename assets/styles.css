@@ -538,6 +538,10 @@ body[data-owner="false"][data-voting="on"] .gvote {
 }
 .rec-badge:empty { display: none; }
 
+/* Played section accent (ember, like the game type) */
+.type-section[data-seen="played"] .section-name { color: var(--type-game); }
+.type-section[data-seen="played"] { border-left: 2px solid rgba(240,105,58,0.5); padding-left: 16px; margin-left: -18px; }
+
 /* Recommended-by-Friends section accent */
 .type-section[data-seen="rec"] .section-name { color: var(--gold); }
 .type-section[data-seen="rec"] { border-left: 2px solid var(--gold); padding-left: 16px; margin-left: -18px; }

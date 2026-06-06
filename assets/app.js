@@ -62,7 +62,7 @@ async function toggleOwner() {
 }
 
 /* ---------- VERDICTS (non-destructive ratings) ---------- */
-const VERDICTS = { love: 'loved', up: 'liked', down: 'disliked', skip: 'not interested' };
+const VERDICTS = { love: 'loved', up: 'liked', down: 'disliked', played: 'played', skip: 'not interested' };
 
 /* section order + plural labels for the grouped view */
 const TYPE_ORDER = ['movie','show','game','book','music','recipe','venue','purchase','project','other'];
@@ -171,16 +171,17 @@ function render() {
   }
 
   /* partition by verdict */
-  const watch = [], loved = [], liked = [], disliked = [], skipped = [];
+  const watch = [], loved = [], liked = [], disliked = [], skipped = [], played = [];
   for (const it of view) {
     if (it.verdict === 'love') loved.push(it);
     else if (it.verdict === 'up') liked.push(it);
     else if (it.verdict === 'down') disliked.push(it);
+    else if (it.verdict === 'played') played.push(it);
     else if (it.verdict === 'skip') skipped.push(it);
     else watch.push(it);
   }
 
-  const visibleCount = watch.length + loved.length + liked.length + disliked.length + (isOwner ? skipped.length : 0);
+  const visibleCount = watch.length + loved.length + liked.length + disliked.length + played.length + (isOwner ? skipped.length : 0);
   if (visibleCount === 0) {
     const empty = document.createElement('div');
     empty.className = 'empty-state';
@@ -203,6 +204,8 @@ function render() {
       const list = groups.get(t);
       if (list && list.length) grid.appendChild(buildSection(TYPE_LABEL[t] || t, list, { type: t }));
     }
+    /* 1.5) Played — own bucket (e.g. the Steam library), collapsed by default */
+    if (played.length) grid.appendChild(buildSection('Played', played, { seen: 'played', glyph: '🎮', collapsed: true }));
     /* 2) Seen it — Loved it */
     if (loved.length) grid.appendChild(buildSection('Seen It · Loved It', loved, { seen: 'loved', glyph: '⭐' }));
     /* 3) Seen it — Liked it */
