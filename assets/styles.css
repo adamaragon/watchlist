@@ -912,6 +912,25 @@ body[data-owner="false"][data-voting="on"] .gvote {
   }
 }
 
+/* Touch devices have no hover, so a width breakpoint isn't enough — any
+   no-hover pointer (phones AND tablets/landscape over 600px) gets the rating /
+   vote clusters permanently shown, docked bottom and wrapped to 2x2 so they're
+   usable and never hidden behind a hover that can't happen. */
+@media (hover: none) {
+  .verdict {
+    top: auto; left: auto; right: 8px; bottom: 8px;
+    flex-wrap: wrap; justify-content: flex-end; gap: 7px;
+    max-width: 84px;
+    opacity: 1; transform: none;
+  }
+  .verdict button { width: 34px; height: 34px; font-size: 16px; }
+  body[data-owner="false"][data-voting="on"] .gvote {
+    left: 8px; right: 8px; bottom: 8px;
+    justify-content: center; flex-wrap: wrap;
+    opacity: 1; transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
