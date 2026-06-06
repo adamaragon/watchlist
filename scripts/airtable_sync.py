@@ -76,6 +76,43 @@ def post_batch(records):
     return 0
 
 import urllib.parse
+
+def fetch_all_ids():
+    """Return [(recordId, idField)] for every Airtable record (id field only)."""
+    base_url = f"https://api.airtable.com/v0/{BASE}/{urllib.parse.quote(TABLE)}"
+    out, offset = [], ""
+    while True:
+        u = base_url + "?pageSize=100&fields%5B%5D=id" + (f"&offset={offset}" if offset else "")
+        req = urllib.request.Request(u, headers={"Authorization": f"Bearer {PAT}"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            j = json.loads(r.read())
+        for rec in j.get("records", []):
+            out.append((rec["id"], (rec.get("fields") or {}).get("id")))
+        offset = j.get("offset", "")
+        if not offset:
+            break
+        time.sleep(0.2)
+    return out
+
+def delete_records(record_ids):
+    base_url = f"https://api.airtable.com/v0/{BASE}/{urllib.parse.quote(TABLE)}"
+    n = 0
+    for i in range(0, len(record_ids), 10):
+        qs = "&".join("records[]=" + rid for rid in record_ids[i:i+10])
+        req = urllib.request.Request(base_url + "?" + qs, method="DELETE",
+                                     headers={"Authorization": f"Bearer {PAT}"})
+        for attempt in range(4):
+            try:
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    n += sum(1 for x in json.loads(r.read()).get("records", []) if x.get("deleted"))
+                break
+            except urllib.error.HTTPError as e:
+                if e.code == 429 or e.code >= 500:
+                    time.sleep(2 * (attempt + 1)); continue
+                raise
+        time.sleep(0.2)
+    return n
+
 def main():
     data = json.load(open(DATA))
     total = 0
@@ -87,6 +124,20 @@ def main():
     if batch:
         total += post_batch(batch)
     print(f"Upserted {total} of {len(data)} records to Airtable base {BASE}/{TABLE}.")
+
+    # Prune: delete Airtable records whose id is no longer in data.json, so the
+    # mirror reflects deletions. Guarded against nuking on a bad/empty load.
+    ids = {it.get("id") for it in data if it.get("id")}
+    if len(ids) < 100:
+        print("Prune skipped (data.json < 100 ids — safety guard).", file=sys.stderr); return
+    allrecs = fetch_all_ids()
+    stale = [rid for rid, idf in allrecs if idf and idf not in ids]
+    if allrecs and len(stale) > len(allrecs) * 0.5:
+        print(f"Prune ABORTED: would delete {len(stale)}/{len(allrecs)} (suspicious).", file=sys.stderr); return
+    if stale:
+        print(f"Pruned {delete_records(stale)} stale records.")
+    else:
+        print("Nothing to prune.")
 
 if __name__ == "__main__":
     main()

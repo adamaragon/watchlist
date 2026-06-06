@@ -1,0 +1,43 @@
+name: Airtable pull (2-way)
+
+# Pull edits/additions made in Airtable back into data.json. Runs every 2 hours
+# (plus a manual button). The site stays the deletion authority, so this never
+# deletes — it only updates fields and adds new rows. Commits with [skip ci] so
+# it doesn't re-trigger the push-sync (the data already matches Airtable).
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: airtable-pull
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull edits from Airtable
+        env:
+          AIRTABLE_PAT: ${{ secrets.AIRTABLE_PAT }}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          AIRTABLE_TABLE: ${{ secrets.AIRTABLE_TABLE }}
+        run: python3 scripts/airtable_pull.py
+      - name: Commit changes (if any)
+        run: |
+          if git diff --quiet -- data.json; then
+            echo "No Airtable edits to pull."
+          else
+            git config user.name "watchlist-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data.json
+            git commit -m "Pull edits from Airtable [skip ci]"
+            git push
+          fi
