@@ -1,9 +1,13 @@
 name: Airtable backup
 
-# Daily backup of data.json -> Airtable, plus manual run button.
+# Sync data.json -> Airtable on every change to the list, with a nightly
+# safety-net run and a manual button.
 on:
+  push:
+    branches: [main]
+    paths: ["data.json"]   # fires within ~1-2 min of any deployed change
   schedule:
-    - cron: "17 9 * * *"   # 09:17 UTC daily
+    - cron: "17 9 * * *"   # 09:17 UTC daily safety net
   workflow_dispatch: {}
 
 jobs:
