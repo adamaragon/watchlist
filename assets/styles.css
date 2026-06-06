@@ -875,6 +875,28 @@ body[data-owner="false"][data-voting="on"] .gvote {
 .count { color: var(--text); }
 .dot { opacity: 0.4; }
 
+/* ---------- PLAYTIME CHIP + SURPRISE PICKER ---------- */
+.playtime {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--type-game);
+  margin: -2px 0 2px;
+}
+.playtime:empty { display: none; }
+
+.surprise-card { width: min(460px, 100%); }
+.surprise-pick { display: flex; gap: 16px; align-items: flex-start; margin: 4px 0 2px; }
+.surprise-pick img { width: 116px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: var(--radius); flex-shrink: 0; box-shadow: var(--shadow-card); background: var(--surface-2); }
+.surprise-meta { min-width: 0; }
+.surprise-title { font-family: var(--font-display); font-style: italic; font-size: 22px; line-height: 1.12; color: var(--text); }
+.surprise-year { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-top: 3px; }
+.surprise-blurb { font-size: 13px; line-height: 1.45; color: var(--muted); margin: 8px 0 0; max-height: 7.5em; overflow: hidden; }
+.surprise-link { display: inline-block; margin-top: 8px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--accent); text-decoration: none; }
+.surprise-link:hover { text-decoration: underline; }
+.surprise-link[hidden] { display: none; }
+
 /* ---------- GUEST INTRO ---------- */
 .intro {
   max-width: 1800px;

@@ -2546,29 +2546,6 @@
     "summary": "A Ugandan special forces unit clashes with a crime lord's forces over the kidnapping of a civilian's sister, resulting in wave after wave of enthusiastically choreographed combat. Isaac Nabwana's micro-budget Ugandan action film became a global internet phenomenon for its extraordinary ambition relative to its extremely modest resources."
   },
   {
-    "id": "kingdoms-of-amalur",
-    "title": "Kingdoms Of Amalur",
-    "type": "game",
-    "confidence": 1,
-    "source_screenshot": "IMG_1590.PNG",
-    "ocr_excerpt": "11:58 g\ntropes without becoming tedious.\n6/10\nKingdoms Of Amalur (2012)\n2012's Kingdoms of Amalur has been called by\nsome fans \"the greatest game nobody played\" but\nthanks to its remastered edition, now it's become\nmore accessible for a second life on current\nconsoles. With the d",
-    "blurb": "2012 open-world action RPG by 38 Studios.",
-    "year": 2012,
-    "link": "https://en.wikipedia.org/wiki/Kingdoms_of_Amalur:_Reckoning",
-    "poster": "posters/kingdoms-of-amalur.jpg",
-    "status": "todo",
-    "tags": [
-      "RPG",
-      "Action",
-      "Open World",
-      "Fantasy"
-    ],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-04",
-    "summary": "A warrior resurrected as the 'Fateless One' — the only being free from destiny in a world governed by fate — must unravel a conspiracy threatening an entire mythological realm. Kingdoms of Amalur: Reckoning combined fluid real-time combat with deep RPG systems in a lushly designed world co-created by R.A. Salvatore."
-  },
-  {
     "id": "torchlight",
     "title": "Torchlight",
     "type": "game",
@@ -3796,7 +3773,8 @@
     "notes": "",
     "added": "2026-06-04",
     "recovered": true,
-    "summary": "Survivors of a spacecraft crash are stranded on a strikingly alien world teeming with bizarre, interdependent life forms as they struggle to reunite and escape. The Max animated series is visually extraordinary, owing debts to Moebius and classic sci-fi illustration in a story that prioritises atmosphere and alien wonder over action."
+    "summary": "Survivors of a spacecraft crash are stranded on a strikingly alien world teeming with bizarre, interdependent life forms as they struggle to reunite and escape. The Max animated series is visually extraordinary, owing debts to Moebius and classic sci-fi illustration in a story that prioritises atmosphere and alien wonder over action.",
+    "hours": null
   },
   {
     "id": "the-twelve-kingdoms",
@@ -6429,29 +6407,6 @@
     "summary": "A dark reimagining of the classic 1960s sitcom The Munsters, produced as a TV pilot for NBC by Bryan Fuller. The pilot reframes the monster family as a genuinely eerie suburban horror-comedy with gothic visual flair, strong performances, and a surprising emotional core. It aired as a Halloween special after NBC declined to order a series."
   },
   {
-    "id": "scavenger-s-reign",
-    "title": "Scavenger's Reign",
-    "type": "show",
-    "year": 2023,
-    "blurb": "An adult animated sci-fi series about survivors stranded on a lush, dangerously alien planet after their spacecraft is damaged.",
-    "poster": "posters/scavenger-s-reign.jpg",
-    "link": "",
-    "source_screenshot": "IMG_0924 (1).PNG",
-    "ocr_excerpt": "",
-    "confidence": 4,
-    "status": "todo",
-    "tags": [
-      "Animation",
-      "Sci-Fi",
-      "Adventure"
-    ],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-04",
-    "recovered": true,
-    "summary": "An adult animated sci-fi series following survivors of a spaceship crash stranded on a lush, bizarre alien planet teeming with strange and often dangerous lifeforms. Each character navigates their own harrowing survival story on a world that feels genuinely alien and deeply strange. Praised for its stunning visuals and willingness to embrace dark, melancholic storytelling."
-  },
-  {
     "id": "paranoia-agent",
     "title": "Paranoia Agent",
     "type": "show",
@@ -7194,53 +7149,6 @@
     "added": "2026-06-04",
     "recovered": true,
     "summary": "A top-down action RPG in the vein of The Legend of Zelda, following a young dreamwalker named Alundra who can enter the nightmares of villagers to combat the demons tormenting them. The game is known for its brutally difficult puzzles and an unusually dark, emotionally weighty story that doesn't shy away from character death. It is regarded as one of the PS1's most underrated RPG treasures."
-  },
-  {
-    "id": "star-ocean-the-second-story",
-    "title": "Star Ocean: The Second Story",
-    "type": "game",
-    "year": 1998,
-    "blurb": "A PS1 JRPG with two playable protagonists, real-time combat, and a massive story spanning multiple planets with hundreds of possible endings.",
-    "poster": "posters/star-ocean-the-second-story.jpg",
-    "link": "",
-    "source_screenshot": "IMG_1203 (1).PNG",
-    "ocr_excerpt": "",
-    "confidence": 4,
-    "status": "todo",
-    "tags": [
-      "JRPG",
-      "Sci-Fi",
-      "Fantasy",
-      "Action"
-    ],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-04",
-    "recovered": true,
-    "summary": "An action RPG following either Claude (a Federation officer from a spacefaring future) or Rena (a healer from a seemingly medieval world) as their paths collide and they work to prevent a galaxy-threatening catastrophe. The game is celebrated for its real-time combat, an enormous cast of optional party members, and one of the most expansive post-game areas in JRPG history. Its dual-protagonist structure and branching Private Actions system gave it exceptional replayability."
-  },
-  {
-    "id": "suikoden-ii",
-    "title": "Suikoden II",
-    "type": "game",
-    "year": 1998,
-    "blurb": "A beloved PS1 JRPG about a young soldier caught in a war between nations who must recruit 108 Stars of Destiny to forge a resistance army.",
-    "poster": "posters/suikoden-ii.jpg",
-    "link": "",
-    "source_screenshot": "IMG_1204 (1).PNG",
-    "ocr_excerpt": "",
-    "confidence": 4,
-    "status": "todo",
-    "tags": [
-      "JRPG",
-      "Fantasy",
-      "Strategy"
-    ],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-04",
-    "recovered": true,
-    "summary": "Widely considered one of the greatest JRPGs ever made, Suikoden II follows a young soldier caught between two warring nations as his childhood friend rises to lead an increasingly brutal army. Players recruit 108 Stars of Destiny characters, each with unique skills, and manage both large-scale strategic battles and intimate personal stories. Its emotionally devastating narrative and tight pacing set a standard rarely matched in the genre."
   },
   {
     "id": "xenogears",
@@ -8794,29 +8702,6 @@
     "added": "2026-06-04",
     "recovered": true,
     "summary": "Luc Besson's lyrical drama follows two childhood rivals — a free-spirited Italian and a withdrawn Frenchman with a near-mystical connection to the ocean — as they compete in international free-diving championships and the sea begins to claim one of them. A visually gorgeous film celebrated for its Mediterranean scenery and Jean-Marc Barr's ethereal performance. A major European art-house hit."
-  },
-  {
-    "id": "splinter-cell-chaos-theory",
-    "title": "Splinter Cell: Chaos Theory",
-    "type": "game",
-    "year": 2005,
-    "blurb": "Stealth action game following NSA operative Sam Fisher on a mission to prevent a global conflict using extreme light-and-shadow mechanics.",
-    "poster": "posters/splinter-cell-chaos-theory.jpg",
-    "link": "",
-    "source_screenshot": "IMG_1681.PNG",
-    "ocr_excerpt": "",
-    "confidence": 4,
-    "status": "todo",
-    "tags": [
-      "Action",
-      "Shooter",
-      "Stealth"
-    ],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-04",
-    "recovered": true,
-    "summary": "Widely regarded as the pinnacle of the Splinter Cell series, this 2005 stealth-action game puts NSA operative Sam Fisher in a crisis involving North Korea, Japan, and China on the brink of war. The game refined the series' mechanics with exceptional lighting systems, a superb cooperative multiplayer mode, and a score by Amon Tobin. Praised for its level design and Ironside's performance."
   },
   {
     "id": "tom-clancy-s-splinter-cell-conviction",
@@ -12014,30 +11899,6 @@
     "summary": "Set in 15th-century Bohemia following a devastating raid, a blacksmith's son named Henry embarks on a quest for justice and survival in one of the most historically authentic open-world RPGs ever made. The game eschews fantasy entirely for a simulation of medieval life — no magic, no elves, just muddy villages, realistic combat, and a genuinely interesting story. Its commitment to historical fidelity was both its most praised and most debated quality."
   },
   {
-    "id": "horizon-zero-dawn",
-    "title": "Horizon Zero Dawn",
-    "type": "game",
-    "year": 2017,
-    "blurb": "Post-apocalyptic action RPG with robotic dinosaurs; recommended in r/rpg_gamers.",
-    "poster": "posters/horizon-zero-dawn.jpg",
-    "link": "",
-    "source_screenshot": "IMG_0310.PNG",
-    "ocr_excerpt": "",
-    "confidence": 3,
-    "status": "todo",
-    "tags": [
-      "Action",
-      "RPG",
-      "Open World"
-    ],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-04",
-    "recovered": true,
-    "source": "reddit",
-    "summary": "In a lush post-apocalyptic world overrun by mechanical creatures, a skilled outcast hunter named Aloy unravels the mystery of her origins and the catastrophe that remade the Earth. Guerrilla Games' open-world debut is acclaimed for its compelling protagonist, stunning environments, and a central mystery whose resolution is genuinely satisfying. It became one of PlayStation's landmark franchises."
-  },
-  {
     "id": "trading-places",
     "title": "Trading Places",
     "type": "movie",
@@ -14413,30 +14274,6 @@
     "summary": "FromSoftware's landmark action-RPG drops players into the dying world of Lordran with minimal exposition and maximum consequence — death is expected, learning is mandatory, and every enemy encounter is a puzzle to be solved through pattern recognition. Its interconnected world design, punishing but fair difficulty, and obscure, fragmented lore spawned an entire genre of imitators. Few games reward persistence as richly or feel as cohesive."
   },
   {
-    "id": "persona-5",
-    "title": "Persona 5",
-    "type": "game",
-    "year": 2016,
-    "blurb": "Stylish JRPG about high school phantom thieves who change hearts in a supernatural cognitive world.",
-    "poster": "posters/persona-5.jpg",
-    "link": "",
-    "source_screenshot": "IMG_0570 (1).PNG",
-    "ocr_excerpt": "",
-    "confidence": 3,
-    "status": "todo",
-    "tags": [
-      "JRPG",
-      "Anime",
-      "Adventure"
-    ],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-04",
-    "recovered": true,
-    "source": "reddit",
-    "summary": "A group of high-school students in Tokyo discover they can enter a supernatural realm of distorted desires and reform corrupt adults by stealing the 'treasures' at the core of their psyches, becoming the phantom-thief Phantom Thieves. Persona 5 is celebrated for its impeccable style, deep social-simulation systems, and a combat engine that rewards tactical thinking. It brought the Persona series to mainstream international prominence."
-  },
-  {
     "id": "nier-automata",
     "title": "Nier: Automata",
     "type": "game",
@@ -14710,7 +14547,7 @@
     "year": 2025,
     "blurb": "Turn-based RPG from Sandfall Interactive set in a Belle Époque-inspired world. Widely praised as a standout JRPG-style experience on modern hardware.",
     "poster": "posters/clair-obscur-expedition-33.jpg",
-    "link": "",
+    "link": "https://store.steampowered.com/app/1903340/",
     "source_screenshot": "IMG_0764 (1).PNG",
     "ocr_excerpt": "",
     "confidence": 3,
@@ -14725,7 +14562,8 @@
     "added": "2026-06-04",
     "recovered": true,
     "source": "reddit",
-    "summary": "Sandfall Interactive's debut title, a French-developed RPG set in a painterly Belle Époque-inspired world where a mysterious entity called the Paintress erases years from existence each cycle, killing everyone of the matching age. The eponymous Expedition 33 are the last group old enough to attempt to stop her before the next stroke of her brush. It received enormous critical acclaim on launch for its combat innovation, emotional storytelling, and stunning art direction."
+    "summary": "Sandfall Interactive's debut title, a French-developed RPG set in a painterly Belle Époque-inspired world where a mysterious entity called the Paintress erases years from existence each cycle, killing everyone of the matching age. The eponymous Expedition 33 are the last group old enough to attempt to stop her before the next stroke of her brush. It received enormous critical acclaim on launch for its combat innovation, emotional storytelling, and stunning art direction.",
+    "hours": null
   },
   {
     "id": "excalibur",
@@ -15487,30 +15325,6 @@
     "recovered": true,
     "source": "reddit",
     "summary": "A young adventurer in a world where the ruins of an ancient advanced civilisation are slowly being uncovered sets off on a grand journey of discovery that evolves from boyish optimism into a confrontation with genuine darkness. Game Arts' RPG is treasured for Justin's infectious enthusiasm, a combat system that rewards positioning and interruption timing, and a sense of wonder that never entirely deserts it. Its first third — the sea voyage and the Wall — is among the most memorable openings in JRPG history."
-  },
-  {
-    "id": "grandia-ii",
-    "title": "Grandia II",
-    "type": "game",
-    "year": 2000,
-    "blurb": "Sequel following a mercenary hired to escort a songstress on a holy pilgrimage, uncovering a plot involving gods and ancient evil. Strong battle system and memorable characters.",
-    "poster": "posters/grandia-ii.jpg",
-    "link": "",
-    "source_screenshot": "IMG_0976 (1).PNG",
-    "ocr_excerpt": "",
-    "confidence": 3,
-    "status": "todo",
-    "tags": [
-      "JRPG",
-      "Adventure",
-      "Fantasy"
-    ],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-04",
-    "recovered": true,
-    "source": "reddit",
-    "summary": "A cynical mercenary hired to escort a priestess on a pilgrimage finds himself drawn into a conflict with the god of darkness whose revival the priestess is meant to prevent. Grandia II is praised for refining its predecessor's excellent combat system further and for a script that genuinely challenges its characters' faith and worldview. It is widely considered one of the Dreamcast's finest RPGs."
   },
   {
     "id": "disgaea",
@@ -36225,26 +36039,6 @@
     "source": "airtable"
   },
   {
-    "id": "expedition-33",
-    "title": "Expedition 33",
-    "type": "game",
-    "year": 2024,
-    "blurb": "New Game Plus required; interpret paintings & clues to solve the mystery.",
-    "poster": "posters/expedition-33.jpg",
-    "link": "https://store.steampowered.com/app/1903340/",
-    "tags": [
-      "Cryptic Puzzle RPG",
-      "PC / Console"
-    ],
-    "rating": 4.6,
-    "notes": "",
-    "added": "2026-06-05",
-    "status": "todo",
-    "verdict": null,
-    "summary": "",
-    "source": "airtable"
-  },
-  {
     "id": "empress",
     "title": "Empress",
     "type": "book",
@@ -36276,25 +36070,6 @@
       "Anime"
     ],
     "rating": 4.5,
-    "notes": "",
-    "added": "2026-06-05",
-    "status": "todo",
-    "verdict": null,
-    "summary": "",
-    "source": "airtable"
-  },
-  {
-    "id": "final-fantasy-tactics-remake",
-    "title": "Final Fantasy Tactics (Remake)",
-    "type": "game",
-    "year": 2025,
-    "blurb": "Remake of the classic isometric tactical RPG.",
-    "poster": "posters/final-fantasy-tactics-remake.jpg",
-    "link": "",
-    "tags": [
-      "Tactical RPG"
-    ],
-    "rating": null,
     "notes": "",
     "added": "2026-06-05",
     "status": "todo",
@@ -36627,7 +36402,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "counter-strike-source",
@@ -36661,7 +36437,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "day-of-defeat-source",
@@ -36729,7 +36506,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "team-fortress-2",
@@ -36763,7 +36541,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "left-4-dead-2",
@@ -36780,7 +36559,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "dota-2",
@@ -36814,7 +36594,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "counter-strike-2",
@@ -36865,7 +36646,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dark-messiah-of-might-magic-single-player",
@@ -36882,7 +36664,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dark-messiah-of-might-magic-multi-player",
@@ -37171,7 +36954,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "shadowgrounds",
@@ -37188,7 +36972,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "vampire-the-masquerade-bloodlines",
@@ -37222,7 +37007,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "evil-genius",
@@ -37273,7 +37059,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "s-t-a-l-k-e-r-shadow-of-chernobyl",
@@ -37290,7 +37077,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "titan-quest",
@@ -37307,7 +37095,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "titan-quest-immortal-throne",
@@ -37324,7 +37113,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 13
   },
   {
     "id": "the-dig",
@@ -37341,7 +37131,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "eets",
@@ -37358,7 +37149,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dreamfall-the-longest-journey",
@@ -37375,7 +37167,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 18
   },
   {
     "id": "the-longest-journey",
@@ -37392,7 +37185,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "lost-planet-extreme-condition",
@@ -37511,7 +37305,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "jade-empire-special-edition",
@@ -37545,7 +37340,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "loki",
@@ -37562,7 +37358,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "two-worlds-ii-hd",
@@ -37579,7 +37376,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "necrovision",
@@ -37596,7 +37394,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "just-cause-2",
@@ -37630,7 +37429,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "sam-max-102-situation-comedy",
@@ -37834,7 +37634,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 24
   },
   {
     "id": "borderlands-goty",
@@ -37851,7 +37652,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 66
   },
   {
     "id": "wolfenstein-3d-spear-of-destiny",
@@ -37936,7 +37738,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "hexen-ii",
@@ -38021,7 +37824,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 25
   },
   {
     "id": "desperados-2-cooper-s-revenge",
@@ -38055,7 +37859,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "quantum-of-solace",
@@ -38191,7 +37996,8 @@
     "status": "todo",
     "verdict": null,
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": null
   },
   {
     "id": "max-payne",
@@ -38225,7 +38031,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "midnight-club-ii",
@@ -38279,23 +38086,6 @@
     "source": "steam"
   },
   {
-    "id": "grand-theft-auto-vice-city-2",
-    "title": "Grand Theft Auto: Vice City",
-    "type": "game",
-    "year": null,
-    "blurb": "",
-    "poster": "posters/grand-theft-auto-vice-city-2.jpg",
-    "link": "https://store.steampowered.com/app/12240/",
-    "tags": [],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-06",
-    "status": "todo",
-    "verdict": "skip",
-    "summary": "",
-    "source": "steam"
-  },
-  {
     "id": "jack-keane",
     "title": "Jack Keane",
     "type": "game",
@@ -38310,7 +38100,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "flatout-ultimate-carnage-collector-s-edition",
@@ -38327,7 +38118,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 19
   },
   {
     "id": "grid",
@@ -38361,7 +38153,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "fuel",
@@ -38378,7 +38171,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "dirt-2",
@@ -38429,7 +38223,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "prince-of-persia-warrior-within",
@@ -38463,7 +38258,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "prince-of-persia-the-two-thrones",
@@ -38514,24 +38310,30 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "tom-clancy-s-splinter-cell-chaos-theory",
     "title": "Tom Clancy's Splinter Cell: Chaos Theory",
     "type": "game",
-    "year": null,
-    "blurb": "",
+    "year": 2005,
+    "blurb": "Stealth action game following NSA operative Sam Fisher on a mission to prevent a global conflict using extreme light-and-shadow mechanics.",
     "poster": "posters/tom-clancy-s-splinter-cell-chaos-theory.jpg",
     "link": "https://store.steampowered.com/app/13570/",
-    "tags": [],
+    "tags": [
+      "Action",
+      "Shooter",
+      "Stealth"
+    ],
     "rating": null,
     "notes": "",
     "added": "2026-06-06",
     "status": "todo",
     "verdict": null,
-    "summary": "",
-    "source": "steam"
+    "summary": "Widely regarded as the pinnacle of the Splinter Cell series, this 2005 stealth-action game puts NSA operative Sam Fisher in a crisis involving North Korea, Japan, and China on the brink of war. The game refined the series' mechanics with exceptional lighting systems, a superb cooperative multiplayer mode, and a score by Amon Tobin. Praised for its level design and Ironside's performance.",
+    "source": "steam",
+    "hours": null
   },
   {
     "id": "tom-clancy-s-splinter-cell-double-agent",
@@ -38599,7 +38401,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 12
   },
   {
     "id": "tom-clancy-s-rainbow-six-vegas-2",
@@ -38616,7 +38419,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "beyond-good-evil",
@@ -38633,7 +38437,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "brothers-in-arms-road-to-hill-30",
@@ -38803,7 +38608,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "crysis-warhead",
@@ -38871,7 +38677,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 14
   },
   {
     "id": "dead-space-2008",
@@ -38888,7 +38695,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "on-the-rain-slick-precipice-of-darkness-episode-one",
@@ -38905,7 +38713,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 12
   },
   {
     "id": "on-the-rain-slick-precipice-of-darkness-episode-two",
@@ -38939,7 +38748,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 19
   },
   {
     "id": "deathspank-thongs-of-virtue",
@@ -38956,7 +38766,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-baconing",
@@ -38973,7 +38784,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "helldorado",
@@ -39058,7 +38870,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "prince-of-persia",
@@ -39092,7 +38905,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "red-faction",
@@ -39143,7 +38957,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-witcher-2-assassins-of-kings-enhanced-edition",
@@ -39160,7 +38975,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "f-e-a-r",
@@ -39177,7 +38993,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "f-e-a-r-3",
@@ -39194,7 +39011,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "f-e-a-r-extraction-point",
@@ -39245,7 +39063,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "bionic-commando",
@@ -39296,7 +39115,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "fallout-3",
@@ -39313,7 +39133,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 45
   },
   {
     "id": "the-elder-scrolls-iii-morrowind",
@@ -39330,7 +39151,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "the-elder-scrolls-iv-oblivion-game-of-the-year-edition-2009",
@@ -39347,7 +39169,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 12
   },
   {
     "id": "call-of-cthulhu-dark-corners-of-the-earth",
@@ -39381,7 +39204,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "worms-reloaded",
@@ -39398,7 +39222,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "alien-breed-impact",
@@ -39415,7 +39240,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-last-remnant",
@@ -39432,7 +39258,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "ceville",
@@ -39449,7 +39276,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "payday-the-heist",
@@ -39500,7 +39328,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 78
   },
   {
     "id": "braid",
@@ -39534,7 +39363,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "gridrunner-revolution",
@@ -39585,7 +39415,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 24
   },
   {
     "id": "aion",
@@ -39602,7 +39433,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 58
   },
   {
     "id": "dark-sector",
@@ -39857,7 +39689,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 11
   },
   {
     "id": "star-wars-knights-of-the-old-republic",
@@ -39874,7 +39707,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "star-wars-the-force-unleashed-ultimate-sith-edition",
@@ -39891,7 +39725,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "monkey-island-2-special-edition",
@@ -39908,7 +39743,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "assassin-s-creed-ii",
@@ -39925,7 +39761,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 36
   },
   {
     "id": "prince-of-persia-the-forgotten-sands",
@@ -40010,7 +39847,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "sega-mega-drive-genesis-classics",
@@ -40027,7 +39865,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "sniper-ghost-warrior-2",
@@ -40061,7 +39900,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "batman-arkham-asylum-goty-edition",
@@ -40078,7 +39918,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "trine",
@@ -40095,7 +39936,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 19
   },
   {
     "id": "trine-2",
@@ -40146,7 +39988,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "fallout",
@@ -40163,7 +40006,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "fallout-2",
@@ -40180,7 +40024,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "fallout-tactics",
@@ -40197,7 +40042,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "final-fantasy-vii-2013",
@@ -40214,7 +40060,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "final-fantasy-viii",
@@ -40248,7 +40095,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "dungeon-siege",
@@ -40265,7 +40113,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dungeon-siege-2",
@@ -40282,7 +40131,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "final-fantasy-xiv-online",
@@ -40299,7 +40149,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "gothic-3",
@@ -40503,7 +40354,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "machinarium",
@@ -40537,7 +40389,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "serious-sam-hd-the-second-encounter",
@@ -40554,7 +40407,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "serious-sam-3-bfe",
@@ -40571,7 +40425,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "altitude",
@@ -40622,7 +40477,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "krater",
@@ -40639,7 +40495,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "singularity",
@@ -40673,7 +40530,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "call-of-duty-modern-warfare-3-2011-multiplayer",
@@ -40758,7 +40616,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "galcon-fusion",
@@ -40775,7 +40634,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "grid-2",
@@ -40860,7 +40720,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "grotesque-tactics-2-dungeons-and-donuts",
@@ -40877,7 +40738,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "hazen-the-dark-whispers",
@@ -40894,7 +40756,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "command-conquer-4-tiberian-twilight",
@@ -40911,7 +40774,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dead-space-2",
@@ -40962,7 +40826,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 43
   },
   {
     "id": "medal-of-honor-tm-multiplayer",
@@ -40996,7 +40861,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "dragon-age-ii-retired",
@@ -41013,7 +40879,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 80
   },
   {
     "id": "limbo",
@@ -41047,7 +40914,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "might-magic-heroes-vi",
@@ -41081,7 +40949,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 90
   },
   {
     "id": "spec-ops-the-line",
@@ -41098,7 +40967,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "darksiders",
@@ -41183,7 +41053,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 7
   },
   {
     "id": "the-next-big-thing",
@@ -41336,7 +41207,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "worms-crazy-golf",
@@ -41353,7 +41225,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "crazy-taxi",
@@ -41438,7 +41311,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 195
   },
   {
     "id": "dead-island",
@@ -41455,7 +41329,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 20
   },
   {
     "id": "sanctum",
@@ -41540,7 +41415,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dungeons-of-dredmor",
@@ -41574,7 +41450,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "bulletstorm",
@@ -41608,7 +41485,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 13
   },
   {
     "id": "runespell-overture",
@@ -41631,18 +41509,24 @@
     "id": "kingdoms-of-amalur-reckoning",
     "title": "Kingdoms of Amalur: Reckoning™",
     "type": "game",
-    "year": null,
-    "blurb": "",
+    "year": 2012,
+    "blurb": "2012 open-world action RPG by 38 Studios.",
     "poster": "posters/kingdoms-of-amalur-reckoning.jpg",
     "link": "https://store.steampowered.com/app/102500/",
-    "tags": [],
+    "tags": [
+      "RPG",
+      "Action",
+      "Open World",
+      "Fantasy"
+    ],
     "rating": null,
     "notes": "4h on record",
     "added": "2026-06-06",
     "status": "todo",
     "verdict": "played",
-    "summary": "",
-    "source": "steam"
+    "summary": "A warrior resurrected as the 'Fateless One' — the only being free from destiny in a world governed by fate — must unravel a conspiracy threatening an entire mythological realm. Kingdoms of Amalur: Reckoning combined fluid real-time combat with deep RPG systems in a lushly designed world co-created by R.A. Salvatore.",
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "orcs-must-die",
@@ -41659,7 +41543,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "a-new-beginning-final-cut",
@@ -41727,7 +41612,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "breath-of-death-vii",
@@ -41744,7 +41630,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "cthulhu-saves-the-world",
@@ -41761,7 +41648,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "alan-wake",
@@ -41778,7 +41666,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "l-a-noire",
@@ -41795,7 +41684,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "bunch-of-heroes",
@@ -41829,7 +41719,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "worms-revolution",
@@ -41846,7 +41737,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "batman-arkham-city-goty",
@@ -41880,7 +41772,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "torchlight-ii",
@@ -41897,7 +41790,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "before-the-echo",
@@ -41914,7 +41808,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "geneforge-1",
@@ -41931,7 +41826,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "geneforge-2",
@@ -41999,7 +41895,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "deus-ex-human-revolution-the-missing-link",
@@ -42033,7 +41930,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "orcs-must-die-2",
@@ -42050,7 +41948,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 18
   },
   {
     "id": "wolfenstein-the-new-order",
@@ -42067,7 +41966,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 20
   },
   {
     "id": "assassin-s-creed-revelations",
@@ -42118,7 +42018,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "tomb-raider",
@@ -42135,7 +42036,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "the-dark-eye-chains-of-satinav",
@@ -42152,7 +42054,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "max-payne-3",
@@ -42169,7 +42072,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 12
   },
   {
     "id": "dishonored",
@@ -42186,7 +42090,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 30
   },
   {
     "id": "insanely-twisted-shadow-planet",
@@ -42322,7 +42227,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 11
   },
   {
     "id": "doom-3-bfg-edition",
@@ -42356,7 +42262,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "star-wars-knights-of-the-old-republic-ii-the-sith-lords",
@@ -42373,7 +42280,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "batman-arkham-knight",
@@ -42424,7 +42332,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "call-of-duty-advanced-warfare-multiplayer",
@@ -42458,7 +42367,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "deadlight",
@@ -42492,7 +42402,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "penny-arcade-s-on-the-rain-slick-precipice-of-darkness-3",
@@ -42577,7 +42488,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "mark-of-the-ninja",
@@ -42611,7 +42523,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "painkiller-hell-damnation",
@@ -42645,7 +42558,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 12
   },
   {
     "id": "home",
@@ -42696,7 +42610,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "worms-armageddon",
@@ -42730,7 +42645,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 22
   },
   {
     "id": "scribblenauts-unlimited",
@@ -42798,7 +42714,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "edna-harvey-harvey-s-new-eyes",
@@ -42832,7 +42749,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "far-cry-3",
@@ -42849,7 +42767,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 193
   },
   {
     "id": "rpg-maker-vx-ace",
@@ -42866,7 +42785,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "chaos-on-deponia",
@@ -42900,7 +42820,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "resident-evil-6",
@@ -42934,7 +42855,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "the-stanley-parable",
@@ -42951,7 +42873,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "reus",
@@ -42968,7 +42891,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dead-island-epidemic",
@@ -42985,7 +42909,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "postal-2",
@@ -43053,7 +42978,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "baldur-s-gate-enhanced-edition",
@@ -43087,7 +43013,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "wreckfest",
@@ -43104,7 +43031,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "the-age-of-decadence",
@@ -43138,7 +43066,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "warframe",
@@ -43155,7 +43084,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 208
   },
   {
     "id": "the-night-of-the-rabbit",
@@ -43189,7 +43119,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "leisure-suit-larry-in-the-land-of-the-lounge-lizards-reloaded",
@@ -43206,7 +43137,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "mars-war-logs",
@@ -43257,7 +43189,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "shadow-warrior",
@@ -43274,7 +43207,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "far-cry-3-blood-dragon",
@@ -43291,7 +43225,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "evoland",
@@ -43325,7 +43260,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "worms-clan-wars",
@@ -43342,7 +43278,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "mad-max",
@@ -43359,7 +43296,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 16
   },
   {
     "id": "ken-follett-s-the-pillars-of-the-earth",
@@ -43376,7 +43314,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "shadowrun-returns",
@@ -43393,7 +43332,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 29
   },
   {
     "id": "poker-night-2",
@@ -43410,7 +43350,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "anodyne",
@@ -43427,7 +43368,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "metal-gear-rising-revengeance",
@@ -43444,7 +43386,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "tom-clancy-s-splinter-cell-blacklist",
@@ -43461,7 +43404,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "rpg-maker-xp",
@@ -43495,7 +43439,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "hitman",
@@ -43512,7 +43457,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "mortal-kombat-komplete-edition",
@@ -43563,7 +43509,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "agarest-generations-of-war",
@@ -43580,7 +43527,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "transistor",
@@ -43614,7 +43562,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "deus-ex-human-revolution-director-s-cut",
@@ -43631,7 +43580,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "the-apogee-throwback-pack",
@@ -43648,7 +43598,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "sniper-elite-3",
@@ -43665,7 +43616,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "outlast",
@@ -43699,7 +43651,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "final-fantasy-iii-3d-remake",
@@ -43733,7 +43686,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "thief",
@@ -43750,7 +43704,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "wanderlust-adventures",
@@ -43784,7 +43739,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "sherlock-holmes-crimes-and-punishments",
@@ -43818,7 +43774,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-crew",
@@ -43835,7 +43792,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "goodbye-deponia",
@@ -43869,7 +43827,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "assassin-s-creed-iv-black-flag",
@@ -43886,7 +43845,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 33
   },
   {
     "id": "styx-master-of-shadows",
@@ -43920,7 +43880,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "sir-you-are-being-hunted",
@@ -43937,7 +43898,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "betrayer",
@@ -43954,7 +43916,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "memoria",
@@ -43988,7 +43951,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 7
   },
   {
     "id": "adventure-time-explore-the-dungeon-because-i-don-t-know",
@@ -44005,7 +43969,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "bound-by-flame",
@@ -44090,7 +44055,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "deadly-premonition-the-director-s-cut",
@@ -44141,7 +44107,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "blackguards",
@@ -44158,7 +44125,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "the-wolf-among-us",
@@ -44175,7 +44143,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "underrail",
@@ -44209,7 +44178,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "the-legend-of-heroes-trails-in-the-sky-sc",
@@ -44243,7 +44213,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "fantasy-grounds-classic",
@@ -44260,7 +44231,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "rocket-league",
@@ -44328,7 +44300,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "1954-alcatraz",
@@ -44413,7 +44386,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "baldur-s-gate-ii-enhanced-edition",
@@ -44430,7 +44404,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "the-vanishing-of-ethan-carter",
@@ -44498,7 +44473,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "you-don-t-know-jack-vol-4-the-ride",
@@ -44515,7 +44491,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "desperados-wanted-dead-or-alive",
@@ -44583,7 +44560,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 7
   },
   {
     "id": "tesla-effect",
@@ -44600,7 +44578,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "borderlands-the-pre-sequel",
@@ -44617,7 +44596,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 15
   },
   {
     "id": "holy-avatar-vs-maidens-of-the-dead",
@@ -44651,7 +44631,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "consortium-2014",
@@ -44685,7 +44666,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "last-dream",
@@ -44719,7 +44701,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "hand-of-fate",
@@ -44736,7 +44719,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-evil-within",
@@ -44770,7 +44754,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "the-whispered-world-special-edition",
@@ -44804,7 +44789,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "secrets-of-grindea",
@@ -44889,7 +44875,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "torment-tides-of-numenera",
@@ -44906,7 +44893,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 11
   },
   {
     "id": "the-incredible-adventures-of-van-helsing-ii",
@@ -44974,7 +44962,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "guacamelee-super-turbo-championship-edition",
@@ -45008,7 +44997,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "mordheim-city-of-the-damned",
@@ -45059,7 +45049,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "skyborn",
@@ -45110,7 +45101,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "woolfe-the-red-hood-diaries",
@@ -45127,7 +45119,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "superpower-2-steam-edition",
@@ -45212,7 +45205,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "metro-2033-redux",
@@ -45263,7 +45257,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 57
   },
   {
     "id": "fable-anniversary",
@@ -45297,7 +45292,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "assassin-s-creed-unity",
@@ -45314,7 +45310,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "the-fall",
@@ -45348,7 +45345,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "pillars-of-eternity",
@@ -45365,7 +45363,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 34
   },
   {
     "id": "the-witcher-3-wild-hunt",
@@ -45382,7 +45381,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 95
   },
   {
     "id": "final-fantasy-xiii",
@@ -45399,7 +45399,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "final-fantasy-xiii-2",
@@ -45450,7 +45451,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "valkyria-chronicles",
@@ -45467,7 +45469,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "split-second",
@@ -45501,7 +45504,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 45
   },
   {
     "id": "millennium-2-take-me-higher",
@@ -45637,7 +45641,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "agents-of-mayhem",
@@ -45654,7 +45659,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "sunless-sea",
@@ -45688,7 +45694,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "mortal-kombat-x",
@@ -45705,7 +45712,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "call-of-duty-black-ops-iii",
@@ -45722,7 +45730,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "spellforce-3-reforced",
@@ -45739,7 +45748,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "metal-gear-solid-v-ground-zeroes",
@@ -45756,7 +45766,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "rain-world",
@@ -45790,7 +45801,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 25
   },
   {
     "id": "final-fantasy-iv-3d-remake",
@@ -45824,7 +45836,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "randal-s-monday",
@@ -45875,7 +45888,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "doom-destiny",
@@ -45892,7 +45906,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "life-is-strange",
@@ -45909,7 +45924,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "we-happy-few",
@@ -45926,7 +45942,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "icewind-dale-enhanced-edition",
@@ -45943,7 +45960,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "hardland",
@@ -45960,7 +45978,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "jotun-valhalla-edition",
@@ -46028,7 +46047,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "tilt-brush",
@@ -46045,7 +46065,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "bloodnet",
@@ -46136,18 +46157,23 @@
     "id": "grandia-ii-hd-remaster",
     "title": "GRANDIA II HD Remaster",
     "type": "game",
-    "year": null,
-    "blurb": "",
+    "year": 2000,
+    "blurb": "Sequel following a mercenary hired to escort a songstress on a holy pilgrimage, uncovering a plot involving gods and ancient evil. Strong battle system and memorable characters.",
     "poster": "posters/grandia-ii-hd-remaster.jpg",
     "link": "https://store.steampowered.com/app/330390/",
-    "tags": [],
+    "tags": [
+      "JRPG",
+      "Adventure",
+      "Fantasy"
+    ],
     "rating": null,
     "notes": "0h on record",
     "added": "2026-06-06",
     "status": "todo",
     "verdict": "played",
-    "summary": "",
-    "source": "steam"
+    "summary": "A cynical mercenary hired to escort a priestess on a pilgrimage finds himself drawn into a conflict with the god of darkness whose revival the priestess is meant to prevent. Grandia II is praised for refining its predecessor's excellent combat system further and for a script that genuinely challenges its characters' faith and worldview. It is widely considered one of the Dreamcast's finest RPGs.",
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "tales-from-the-borderlands",
@@ -46164,7 +46190,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "game-of-thrones-a-telltale-games-series",
@@ -46198,7 +46225,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "kaiju-a-gogo",
@@ -46266,7 +46294,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "deus-ex-mankind-divided",
@@ -46283,7 +46312,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 20
   },
   {
     "id": "dimmdrive-gaming-ramdrive-10-000-mb-s",
@@ -46300,7 +46330,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "transformers-devastation",
@@ -46334,7 +46365,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "huniepop",
@@ -46351,7 +46383,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "headlander",
@@ -46385,7 +46418,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "hatred",
@@ -46402,7 +46436,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "arizona-sunshine-vr-legacy",
@@ -46419,7 +46454,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "shadowgate-macventure-series",
@@ -46470,7 +46506,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "lightning-returns-final-fantasy-xiii",
@@ -46504,7 +46541,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 43
   },
   {
     "id": "final-fantasy-iv-the-after-years",
@@ -46555,7 +46593,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "google-earth-vr",
@@ -46572,7 +46611,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "cubicle-quest",
@@ -46623,7 +46663,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "tales-of-zestiria",
@@ -46640,7 +46681,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "assassin-s-creed-chronicles-china",
@@ -46742,7 +46784,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "telepath-tactics",
@@ -46793,7 +46836,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "the-incredible-adventures-of-van-helsing-iii",
@@ -46810,7 +46854,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "remnants-of-isolation",
@@ -46844,7 +46889,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "downwell",
@@ -46912,7 +46958,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 25
   },
   {
     "id": "tyranny",
@@ -46929,7 +46976,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 14
   },
   {
     "id": "rpg-maker-mv",
@@ -46946,7 +46994,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 39
   },
   {
     "id": "battle-brothers",
@@ -46980,7 +47029,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "sniper-ghost-warrior-3",
@@ -46997,7 +47047,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 35
   },
   {
     "id": "marvel-s-midnight-suns",
@@ -47014,7 +47065,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "assassin-s-creed-syndicate",
@@ -47031,7 +47083,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 32
   },
   {
     "id": "opaline",
@@ -47082,7 +47135,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 14
   },
   {
     "id": "tales-of-symphonia",
@@ -47116,7 +47170,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 18
   },
   {
     "id": "fallout-4",
@@ -47133,7 +47188,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 265
   },
   {
     "id": "pale-echoes",
@@ -47167,7 +47223,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "doom",
@@ -47184,7 +47241,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "mindshow",
@@ -47201,7 +47259,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "eon-altar",
@@ -47235,7 +47294,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "final-fantasy-v",
@@ -47252,24 +47312,8 @@
     "status": "todo",
     "verdict": null,
     "summary": "",
-    "source": "steam"
-  },
-  {
-    "id": "final-fantasy-vi",
-    "title": "FINAL FANTASY VI",
-    "type": "game",
-    "year": null,
-    "blurb": "",
-    "poster": "posters/final-fantasy-vi.jpg",
-    "link": "https://store.steampowered.com/app/382900/",
-    "tags": [],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-06",
-    "status": "todo",
-    "verdict": null,
-    "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": null
   },
   {
     "id": "rpg-maker-2000",
@@ -47303,7 +47347,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "oxenfree",
@@ -47320,7 +47365,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "rise-of-the-tomb-raider",
@@ -47354,7 +47400,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "call-of-duty-modern-warfare-remastered-2017",
@@ -47371,7 +47418,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "call-of-duty-modern-warfare-remastered-multiplayer",
@@ -47405,7 +47453,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-jackbox-party-pack-2",
@@ -47422,7 +47471,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "deus-ex-revision",
@@ -47456,7 +47506,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "the-vanishing-of-ethan-carter-redux",
@@ -47490,7 +47541,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dead-secret",
@@ -47524,7 +47576,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dishonored-2",
@@ -47541,7 +47594,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "vikings-wolves-of-midgard",
@@ -47558,7 +47612,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "wasteland-2-director-s-cut",
@@ -47575,7 +47630,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dangerous-golf",
@@ -47592,7 +47648,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "disgaea-pc",
@@ -47609,7 +47666,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "altspacevr",
@@ -47626,7 +47684,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "sakura-dungeon",
@@ -47660,7 +47719,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "bioshock-2-remastered",
@@ -47694,7 +47754,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "hellblade-senua-s-sacrifice",
@@ -47711,7 +47772,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "shadow-tactics-blades-of-the-shogun",
@@ -47728,7 +47790,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "resident-evil-7-biohazard",
@@ -47796,7 +47859,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "wolcen-lords-of-mayhem",
@@ -47813,7 +47877,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "little-nightmares",
@@ -47830,7 +47895,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "shadwen",
@@ -47847,7 +47913,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "vampyr",
@@ -47864,7 +47931,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "a-chair-in-a-room-greenwater",
@@ -47881,7 +47949,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "tales-of-berseria",
@@ -47898,7 +47967,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "duke-nukem-3d-20th-anniversary-world-tour",
@@ -47915,7 +47985,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "the-jackbox-party-pack-3",
@@ -47932,7 +48003,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "rusty-lake-hotel",
@@ -47966,7 +48038,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 88
   },
   {
     "id": "hidden-folks",
@@ -48017,7 +48090,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "paladins",
@@ -48034,7 +48108,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "the-lab",
@@ -48051,7 +48126,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "hot-dogs-horseshoes-hand-grenades",
@@ -48068,7 +48144,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "battle-chasers-nightwar",
@@ -48085,7 +48162,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "kingdom-rush-frontiers",
@@ -48119,7 +48197,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "bayonetta",
@@ -48153,7 +48232,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 31
   },
   {
     "id": "darksiders-warmastered-edition",
@@ -48204,7 +48284,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "seven-enhanced-edition",
@@ -48221,7 +48302,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "nine-parchments",
@@ -48255,7 +48337,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "prey",
@@ -48272,7 +48355,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "smile-game-builder",
@@ -48289,7 +48373,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 15
   },
   {
     "id": "god-s-trigger",
@@ -48306,7 +48391,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "south-park-the-fractured-but-whole",
@@ -48323,7 +48409,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "the-elder-scrolls-v-skyrim-special-edition",
@@ -48340,7 +48427,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 38
   },
   {
     "id": "tropico-6",
@@ -48374,7 +48462,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "disgaea-2-pc",
@@ -48408,7 +48497,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "gabriel-knight-sins-of-the-fathers",
@@ -48425,7 +48515,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "batman-the-telltale-series",
@@ -48476,7 +48567,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "senran-kagura-estival-versus",
@@ -48510,7 +48602,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "just-cause-4",
@@ -48527,7 +48620,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "accounting",
@@ -48544,7 +48638,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "use-your-words",
@@ -48561,7 +48656,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "rpg-maker-vx",
@@ -48595,7 +48691,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "for-the-king",
@@ -48612,7 +48709,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "warhammer-40-000-inquisitor-martyr",
@@ -48629,7 +48727,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dungeon-rats",
@@ -48663,7 +48762,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "dying-light-2-reloaded-edition",
@@ -48680,7 +48780,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 12
   },
   {
     "id": "the-legend-of-heroes-trails-of-cold-steel",
@@ -48697,7 +48798,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 28
   },
   {
     "id": "forgotton-anne",
@@ -48731,7 +48833,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "rage-2",
@@ -48748,7 +48851,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 11
   },
   {
     "id": "gravity-sketch-vr",
@@ -48765,7 +48869,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "warhammer-vermintide-2",
@@ -48816,7 +48921,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "sairento-vr",
@@ -48850,7 +48956,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 73
   },
   {
     "id": "labyrinth-of-refrain-coven-of-dusk",
@@ -48867,7 +48974,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "the-outer-worlds",
@@ -48884,7 +48992,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 18
   },
   {
     "id": "assassin-s-creed-origins",
@@ -48901,7 +49010,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 33
   },
   {
     "id": "artifact-classic",
@@ -48952,7 +49062,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "fallout-shelter",
@@ -48969,7 +49080,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 17
   },
   {
     "id": "badass",
@@ -49020,7 +49132,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 34
   },
   {
     "id": "the-red-strings-club",
@@ -49071,7 +49184,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 19
   },
   {
     "id": "blood-n-bikinis",
@@ -49139,7 +49253,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "paradigm",
@@ -49173,7 +49288,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "the-evil-within-2",
@@ -49207,7 +49323,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "barotrauma",
@@ -49241,7 +49358,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "star-ocean-the-last-hope-4k-full-hd-remaster",
@@ -49292,7 +49410,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "desperados-iii",
@@ -49309,7 +49428,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "fallout-4-vr",
@@ -49326,7 +49446,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "wolfenstein-ii-the-new-colossus",
@@ -49343,7 +49464,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "chrono-trigger",
@@ -49394,7 +49516,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "beat-saber",
@@ -49411,7 +49534,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "dungeons-dragons-dark-alliance",
@@ -49479,7 +49603,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "secret-of-mana",
@@ -49530,7 +49655,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "boxvr",
@@ -49581,7 +49707,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "spider-man-homecoming-virtual-reality-experience",
@@ -49598,7 +49725,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "resonance-of-fate-end-of-eternity-4k-hd-edition",
@@ -49632,7 +49760,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 49
   },
   {
     "id": "boobs-vs-zombies",
@@ -49666,7 +49795,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "crimson-gray",
@@ -49751,7 +49881,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 13
   },
   {
     "id": "batman-the-enemy-within-the-telltale-series",
@@ -49836,7 +49967,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "the-iron-oath",
@@ -49853,7 +49985,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "planet-zoo",
@@ -49870,7 +50003,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "neverwinter-nights-enhanced-edition",
@@ -49887,7 +50021,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "jimmy-and-the-pulsating-mass",
@@ -49904,7 +50039,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "driftland-the-magic-revival",
@@ -49921,7 +50057,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "wasteland-3",
@@ -49938,7 +50075,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 31
   },
   {
     "id": "talespire",
@@ -49955,7 +50093,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 7
   },
   {
     "id": "sniper-elite-v2-remastered",
@@ -49972,7 +50111,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "borderlands-goty-enhanced",
@@ -50006,7 +50146,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "yag",
@@ -50023,7 +50164,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "tales-of-vesperia-definitive-edition",
@@ -50040,7 +50182,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 11
   },
   {
     "id": "tales-of-arise",
@@ -50057,7 +50200,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dragon-quest-xi-echoes-of-an-elusive-age",
@@ -50074,7 +50218,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 64
   },
   {
     "id": "cloudpunk",
@@ -50091,7 +50236,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "hellblade-senua-s-sacrifice-vr-edition",
@@ -50159,7 +50305,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "mutant-year-zero-road-to-eden",
@@ -50176,7 +50323,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "earthlock",
@@ -50210,7 +50358,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "the-jackbox-party-pack-5",
@@ -50227,7 +50376,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "gloomhaven",
@@ -50244,7 +50394,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "doom-eternal",
@@ -50278,7 +50429,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "valkyria-chronicles-4-complete-edition",
@@ -50329,7 +50481,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 37
   },
   {
     "id": "atomfall",
@@ -50346,7 +50499,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 14
   },
   {
     "id": "disgaea-5-complete",
@@ -50363,7 +50517,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 13
   },
   {
     "id": "assassin-s-creed-odyssey",
@@ -50380,7 +50535,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 21
   },
   {
     "id": "one-piece-odyssey",
@@ -50397,7 +50553,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 14
   },
   {
     "id": "kingdom-rush-origins",
@@ -50414,7 +50571,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "spellforce-3-soul-harvest",
@@ -50465,7 +50623,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "last-evil",
@@ -50499,7 +50658,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "pixel-game-maker-mv",
@@ -50550,7 +50710,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dragon-ball-z-kakarot",
@@ -50567,7 +50728,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "srpg-studio",
@@ -50601,7 +50763,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "wasteland-remastered",
@@ -50635,7 +50798,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "granblue-fantasy-relink",
@@ -50652,7 +50816,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "xcom-chimera-squad",
@@ -50720,7 +50885,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "gato-roboto",
@@ -50805,7 +50971,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "iron-marines",
@@ -50822,7 +50989,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "age-of-empires-iii-definitive-edition",
@@ -50856,7 +51024,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "the-dark-pictures-anthology-man-of-medan",
@@ -50890,7 +51059,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 99
   },
   {
     "id": "among-us",
@@ -50907,7 +51077,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "once-ever-after",
@@ -50924,7 +51095,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "romancing-saga-3",
@@ -50941,7 +51113,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "evenicle",
@@ -50958,7 +51131,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "the-waylanders",
@@ -51009,7 +51183,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "spiritfarer-farewell-edition",
@@ -51043,7 +51218,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "thronebreaker-the-witcher-tales",
@@ -51060,7 +51236,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "halo-the-master-chief-collection",
@@ -51111,7 +51288,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "gordian-quest",
@@ -51128,7 +51306,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "hogwarts-legacy",
@@ -51179,7 +51358,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "crown-trick",
@@ -51202,18 +51382,21 @@
     "id": "final-fantasy-tactics-the-ivalice-chronicles",
     "title": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
     "type": "game",
-    "year": null,
-    "blurb": "",
+    "year": 2025,
+    "blurb": "Remake of the classic isometric tactical RPG.",
     "poster": "posters/final-fantasy-tactics-the-ivalice-chronicles.jpg",
     "link": "https://store.steampowered.com/app/1004640/",
-    "tags": [],
+    "tags": [
+      "Tactical RPG"
+    ],
     "rating": null,
     "notes": "38h on record",
     "added": "2026-06-06",
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 38
   },
   {
     "id": "the-jackbox-party-pack-6",
@@ -51230,7 +51413,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "final-fantasy-viii-remastered",
@@ -51247,7 +51431,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "unsung-story",
@@ -51281,7 +51466,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 63
   },
   {
     "id": "rpg-developer-bakin",
@@ -51315,7 +51501,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "tactical-breach-wizards",
@@ -51332,7 +51519,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dota-underlords",
@@ -51366,7 +51554,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "trover-saves-the-universe",
@@ -51383,7 +51572,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "wolfenstein-youngblood",
@@ -51417,7 +51607,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "inkbound",
@@ -51468,7 +51659,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dragon-quest-builders-2",
@@ -51485,7 +51677,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "roguebook",
@@ -51502,7 +51695,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "pistol-whip",
@@ -51519,7 +51713,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "bug-fables-the-everlasting-sapling",
@@ -51536,7 +51731,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "jagged-alliance-3",
@@ -51553,7 +51749,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "chicken-police",
@@ -51570,7 +51767,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "baldur-s-gate-3",
@@ -51587,7 +51785,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 104
   },
   {
     "id": "marvel-s-guardians-of-the-galaxy",
@@ -51621,7 +51820,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "cyberpunk-2077",
@@ -51638,7 +51838,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 270
   },
   {
     "id": "sands-of-salzaar",
@@ -51689,7 +51890,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "rpg-maker-mz",
@@ -51706,7 +51908,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 41
   },
   {
     "id": "fall-guys",
@@ -51723,7 +51926,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "weird-west-definitive-edition",
@@ -51740,7 +51944,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "monster-train",
@@ -51757,7 +51962,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "nier-replicant-ver-1-22474487139",
@@ -51791,7 +51997,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "sherlock-holmes-chapter-one",
@@ -51842,7 +52049,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 25
   },
   {
     "id": "hades",
@@ -51859,7 +52067,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "utawarerumono-mask-of-deception",
@@ -51933,18 +52142,23 @@
     "id": "horizon-zero-dawn-complete-edition",
     "title": "Horizon Zero Dawn™ Complete Edition",
     "type": "game",
-    "year": null,
-    "blurb": "",
+    "year": 2017,
+    "blurb": "Post-apocalyptic action RPG with robotic dinosaurs; recommended in r/rpg_gamers.",
     "poster": "posters/horizon-zero-dawn-complete-edition.jpg",
     "link": "https://store.steampowered.com/app/1151640/",
-    "tags": [],
+    "tags": [
+      "Action",
+      "RPG",
+      "Open World"
+    ],
     "rating": null,
     "notes": "3h on record",
     "added": "2026-06-06",
     "status": "todo",
     "verdict": "played",
-    "summary": "",
-    "source": "steam"
+    "summary": "In a lush post-apocalyptic world overrun by mechanical creatures, a skilled outcast hunter named Aloy unravels the mystery of her origins and the catastrophe that remade the Earth. Guerrilla Games' open-world debut is acclaimed for its compelling protagonist, stunning environments, and a central mystery whose resolution is genuinely satisfying. It became one of PlayStation's landmark franchises.",
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "titan-quest-ii",
@@ -51961,7 +52175,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "steamy-sextet",
@@ -51978,7 +52193,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "showgunners",
@@ -51995,7 +52211,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "king-arthur-knight-s-tale",
@@ -52046,7 +52263,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "futa-fix-dick-dine-and-dash",
@@ -52080,7 +52298,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "final-fantasy-ii",
@@ -52134,23 +52353,6 @@
     "source": "steam"
   },
   {
-    "id": "final-fantasy-v-2",
-    "title": "FINAL FANTASY V",
-    "type": "game",
-    "year": null,
-    "blurb": "",
-    "poster": "posters/final-fantasy-v-2.jpg",
-    "link": "https://store.steampowered.com/app/1173810/",
-    "tags": [],
-    "rating": null,
-    "notes": "",
-    "added": "2026-06-06",
-    "status": "todo",
-    "verdict": null,
-    "summary": "",
-    "source": "steam"
-  },
-  {
     "id": "final-fantasy-vi-2",
     "title": "FINAL FANTASY VI",
     "type": "game",
@@ -52165,7 +52367,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 17
   },
   {
     "id": "legend-of-mana",
@@ -52199,7 +52402,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "pathfinder-wrath-of-the-righteous-enhanced-edition",
@@ -52216,7 +52420,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 13
   },
   {
     "id": "worms-rumble",
@@ -52352,7 +52557,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "the-jackbox-party-pack-7",
@@ -52369,7 +52575,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "explorers-of-the-abyss",
@@ -52386,7 +52593,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-sims-4",
@@ -52403,7 +52611,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "a-way-out",
@@ -52454,7 +52663,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "disgaea-4-complete",
@@ -52488,7 +52698,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "resident-evil-re-verse",
@@ -52539,7 +52750,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "star-wars-battlefront",
@@ -52573,7 +52785,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "battlefield-v",
@@ -52590,7 +52803,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "battlefield-3",
@@ -52607,7 +52821,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 25
   },
   {
     "id": "battlefield-1",
@@ -52658,7 +52873,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "halo-infinite",
@@ -52675,7 +52891,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 28
   },
   {
     "id": "sea-of-stars",
@@ -52692,7 +52909,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "deathloop",
@@ -52709,7 +52927,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 12
   },
   {
     "id": "atelier-ryza-2-lost-legends-the-secret-fairy",
@@ -52811,7 +53030,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 39
   },
   {
     "id": "redfall",
@@ -52845,7 +53065,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition",
@@ -52862,7 +53083,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "mass-effect-legendary-edition",
@@ -52896,7 +53118,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "sniper-ghost-warrior-contracts-2",
@@ -52947,7 +53170,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "fuga-melodies-of-steel",
@@ -52964,7 +53188,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "fetish-locator-week-one",
@@ -53015,7 +53240,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "persona-5-strikers",
@@ -53049,7 +53275,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "kathy-rain-director-s-cut",
@@ -53083,7 +53310,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "spellforce-3-versus-edition",
@@ -53134,7 +53362,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "bravely-default-ii",
@@ -53151,7 +53380,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "the-outer-worlds-2",
@@ -53168,7 +53398,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 32
   },
   {
     "id": "tactics-ogre-reborn",
@@ -53185,7 +53416,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 38
   },
   {
     "id": "final-fantasy-vii-remake-intergrade",
@@ -53202,7 +53434,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "slobbish-dragon-princess",
@@ -53219,7 +53452,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "robolife-days-with-aino",
@@ -53236,7 +53470,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "maniac",
@@ -53253,7 +53488,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "carnal-instinct",
@@ -53287,7 +53523,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "tyrant-s-blessing",
@@ -53338,7 +53575,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "shadow-gambit-the-cursed-crew",
@@ -53355,7 +53593,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "forza-horizon-5",
@@ -53372,7 +53611,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-jackbox-party-pack-8",
@@ -53389,7 +53629,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "west-hunt",
@@ -53440,7 +53681,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "shadow-tactics-blades-of-the-shogun-aiko-s-choice",
@@ -53457,7 +53699,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "mercenaries-blaze",
@@ -53474,7 +53717,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "lust-theory",
@@ -53491,7 +53735,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "karryn-s-prison",
@@ -53508,7 +53753,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 4
   },
   {
     "id": "palworld",
@@ -53593,7 +53839,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "sovereign-syndicate",
@@ -53627,24 +53874,30 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "persona-5-royal",
     "title": "Persona 5 Royal",
     "type": "game",
-    "year": null,
-    "blurb": "",
+    "year": 2016,
+    "blurb": "Stylish JRPG about high school phantom thieves who change hearts in a supernatural cognitive world.",
     "poster": "posters/persona-5-royal.jpg",
     "link": "https://store.steampowered.com/app/1687950/",
-    "tags": [],
+    "tags": [
+      "JRPG",
+      "Anime",
+      "Adventure"
+    ],
     "rating": null,
     "notes": "",
     "added": "2026-06-06",
     "status": "todo",
     "verdict": null,
-    "summary": "",
-    "source": "steam"
+    "summary": "A group of high-school students in Tokyo discover they can enter a supernatural realm of distorted desires and reform corrupt adults by stealing the 'treasures' at the core of their psyches, becoming the phantom-thief Phantom Thieves. Persona 5 is celebrated for its impeccable style, deep social-simulation systems, and a combat engine that rewards tactical thinking. It brought the Persona series to mainstream international prominence.",
+    "source": "steam",
+    "hours": null
   },
   {
     "id": "clanfolk",
@@ -53661,7 +53914,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "rifftrax-the-game",
@@ -53695,7 +53949,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "love-season",
@@ -53712,7 +53967,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "makai-kingdom-reclaimed-and-rebound",
@@ -53763,7 +54019,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 7
   },
   {
     "id": "voice-of-cards-the-forsaken-maiden",
@@ -53797,7 +54054,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "vaygren-lustful-temptation",
@@ -53814,7 +54072,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "vampire-survivors",
@@ -53831,7 +54090,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 18
   },
   {
     "id": "little-goody-two-shoes",
@@ -53865,7 +54125,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "fallout-76-public-test-server",
@@ -53899,7 +54160,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "lust-academy",
@@ -53916,7 +54178,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "telepath-tactics-liberated",
@@ -53950,7 +54213,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 31
   },
   {
     "id": "the-jackbox-party-pack-9",
@@ -53967,7 +54231,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "potionomics",
@@ -53984,7 +54249,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "wandering-sword",
@@ -54001,7 +54267,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "forgotten-realms-the-archives-collection-one",
@@ -54120,7 +54387,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "forgotten-realms-the-archives-collection-three",
@@ -54205,7 +54473,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "the-outer-worlds-spacer-s-choice-edition",
@@ -54222,24 +54491,30 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 30
   },
   {
     "id": "suikoden-i-ii-hd-remaster-gate-rune-and-dunan-unification-wars",
     "title": "Suikoden I&II HD Remaster Gate Rune and Dunan Unification Wars",
     "type": "game",
-    "year": null,
-    "blurb": "",
+    "year": 1998,
+    "blurb": "A beloved PS1 JRPG about a young soldier caught in a war between nations who must recruit 108 Stars of Destiny to forge a resistance army.",
     "poster": "posters/suikoden-i-ii-hd-remaster-gate-rune-and-dunan-unification-wars.jpg",
     "link": "https://store.steampowered.com/app/1932640/",
-    "tags": [],
+    "tags": [
+      "JRPG",
+      "Fantasy",
+      "Strategy"
+    ],
     "rating": null,
     "notes": "",
     "added": "2026-06-06",
     "status": "todo",
     "verdict": null,
-    "summary": "",
-    "source": "steam"
+    "summary": "Widely considered one of the greatest JRPGs ever made, Suikoden II follows a young soldier caught between two warring nations as his childhood friend rises to lead an increasingly brutal army. Players recruit 108 Stars of Destiny characters, each with unique skills, and manage both large-scale strategic battles and intimate personal stories. Its emotionally devastating narrative and tight pacing set a standard rarely matched in the genre.",
+    "source": "steam",
+    "hours": null
   },
   {
     "id": "call-of-duty",
@@ -54256,7 +54531,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "shadows-over-loathing",
@@ -54307,7 +54583,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "octopath-traveler-ii",
@@ -54324,7 +54601,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "sand-land",
@@ -54341,7 +54619,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "call-of-duty-black-ops-cold-war",
@@ -54358,7 +54637,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 7
   },
   {
     "id": "labyrinth-of-galleria-the-moon-society",
@@ -54392,7 +54672,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "live-a-live",
@@ -54409,7 +54690,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 66
   },
   {
     "id": "dragon-quest-treasures",
@@ -54426,7 +54708,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dragon-s-dogma-2",
@@ -54443,7 +54726,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 18
   },
   {
     "id": "esoteric-ebb",
@@ -54460,7 +54744,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "return-to-monkey-island",
@@ -54477,7 +54762,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 8
   },
   {
     "id": "like-a-dragon-infinite-wealth",
@@ -54494,7 +54780,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "saga-emerald-beyond",
@@ -54511,7 +54798,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "crysis-2-remastered",
@@ -54579,7 +54867,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 12
   },
   {
     "id": "warhammer-40-000-rogue-trader",
@@ -54596,7 +54885,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 6
   },
   {
     "id": "tiny-glade",
@@ -54613,7 +54903,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "ghost-recon-breakpoint",
@@ -54630,24 +54921,31 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 31
   },
   {
     "id": "star-ocean-the-second-story-r",
     "title": "STAR OCEAN THE SECOND STORY R",
     "type": "game",
-    "year": null,
-    "blurb": "",
+    "year": 1998,
+    "blurb": "A PS1 JRPG with two playable protagonists, real-time combat, and a massive story spanning multiple planets with hundreds of possible endings.",
     "poster": "posters/star-ocean-the-second-story-r.jpg",
     "link": "https://store.steampowered.com/app/2238900/",
-    "tags": [],
+    "tags": [
+      "JRPG",
+      "Sci-Fi",
+      "Fantasy",
+      "Action"
+    ],
     "rating": null,
     "notes": "3h on record",
     "added": "2026-06-06",
     "status": "todo",
     "verdict": "played",
-    "summary": "",
-    "source": "steam"
+    "summary": "An action RPG following either Claude (a Federation officer from a spacefaring future) or Rena (a healer from a seemingly medieval world) as their paths collide and they work to prevent a galaxy-threatening catastrophe. The game is celebrated for its real-time combat, an enormous cast of optional party members, and one of the most expansive post-game areas in JRPG history. Its dual-protagonist structure and branching Private Actions system gave it exceptional replayability.",
+    "source": "steam",
+    "hours": 3
   },
   {
     "id": "disgaea-7-vows-of-the-virtueless",
@@ -54681,7 +54979,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "peeping-dorm-manager",
@@ -54715,7 +55014,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "monster-girl-1-000",
@@ -54766,7 +55066,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dungeons-degenerate-gamblers",
@@ -54783,7 +55084,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 9
   },
   {
     "id": "s-t-a-l-k-e-r-shadow-of-chornobyl-enhanced-edition",
@@ -54885,7 +55187,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 28
   },
   {
     "id": "sex-of-thrones",
@@ -54902,7 +55205,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 2
   },
   {
     "id": "dragon-quest-vii-reimagined",
@@ -54970,7 +55274,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 10
   },
   {
     "id": "dispatch",
@@ -54987,7 +55292,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "the-elder-scrolls-iv-oblivion-remastered",
@@ -55004,7 +55310,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 49
   },
   {
     "id": "the-jackbox-naughty-pack",
@@ -55021,7 +55328,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "metaphor-refantazio",
@@ -55038,7 +55346,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 0
   },
   {
     "id": "dragon-quest-iii-hd-2d-remake",
@@ -55055,7 +55364,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 17
   },
   {
     "id": "monster-hunter-stories-3-twisted-reflection",
@@ -55089,7 +55399,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 5
   },
   {
     "id": "crime-boss-rockay-city",
@@ -55106,7 +55417,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "dying-light-the-beast",
@@ -55140,7 +55452,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "assassin-s-creed-mirage",
@@ -55157,7 +55470,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 1
   },
   {
     "id": "assassin-s-creed-shadows",
@@ -55174,7 +55488,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 20
   },
   {
     "id": "grand-theft-auto-v-enhanced",
@@ -55191,7 +55506,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 21
   },
   {
     "id": "heretic-hexen",
@@ -55225,7 +55541,8 @@
     "status": "todo",
     "verdict": "played",
     "summary": "",
-    "source": "steam"
+    "source": "steam",
+    "hours": 7
   },
   {
     "id": "trails-in-the-sky-1st-chapter",

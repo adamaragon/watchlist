@@ -202,10 +202,13 @@ function render() {
     const order = [...TYPE_ORDER, ...[...groups.keys()].filter(t => !TYPE_ORDER.includes(t))];
     for (const t of order) {
       const list = groups.get(t);
-      if (list && list.length) grid.appendChild(buildSection(TYPE_LABEL[t] || t, list, { type: t }));
+      if (list && list.length) grid.appendChild(buildSection(TYPE_LABEL[t] || t, list, { type: t, collapsed: t === 'game' }));
     }
-    /* 1.5) Played — own bucket (e.g. the Steam library), collapsed by default */
-    if (played.length) grid.appendChild(buildSection('Played', played, { seen: 'played', glyph: '🎮', collapsed: true }));
+    /* 1.5) Played — own bucket (e.g. the Steam library), most-played first, collapsed */
+    if (played.length) {
+      played.sort((a, b) => (b.hours || 0) - (a.hours || 0));
+      grid.appendChild(buildSection('Played', played, { seen: 'played', glyph: '🎮', collapsed: true }));
+    }
     /* 2) Seen it — Loved it */
     if (loved.length) grid.appendChild(buildSection('Seen It · Loved It', loved, { seen: 'loved', glyph: '⭐' }));
     /* 3) Seen it — Liked it */
@@ -236,6 +239,7 @@ function buildSection(label, list, opts = {}) {
     const det = document.createElement('details');
     det.className = 'type-section seen-section';
     if (opts.seen) det.dataset.seen = opts.seen;
+    if (opts.type) det.dataset.type = opts.type;
     const sum = document.createElement('summary');
     sum.className = 'section-head';
     sum.innerHTML = headInner + '<span class="section-caret" aria-hidden="true">▾</span>';
@@ -294,6 +298,8 @@ function card(it) {
 
   /* year + title + blurb (inline-edit is owner-only) */
   $('.year',  node).textContent = it.year || '';
+  const ptEl = $('.playtime', node);
+  if (ptEl) { if (it.hours) ptEl.textContent = '⏱ ' + it.hours + 'h'; else ptEl.remove(); }
   $('.title', node).textContent = it.title;
   $('.blurb', node).textContent = it.blurb || '';
   $('.title', node).contentEditable = isOwner ? 'true' : 'false';
@@ -504,6 +510,24 @@ async function sendSuggest() {
   }
 }
 
+/* ---------- SURPRISE ME (random backlog game) ---------- */
+const surpriseModal = $('#surprise-modal');
+function rollSurprise() {
+  const pool = items.filter(it => (it.type || '') === 'game' && !it.verdict && it.status !== 'done');
+  if (!pool.length) return;
+  const it = pool[Math.floor(Math.random() * pool.length)];
+  const img = $('#surprise-poster');
+  if (it.poster) { img.src = (window.WL_BASE || '') + it.poster; img.style.display = ''; }
+  else img.style.display = 'none';
+  $('.surprise-title', surpriseModal).textContent = it.title;
+  $('.surprise-year', surpriseModal).textContent = it.year || '';
+  $('.surprise-blurb', surpriseModal).textContent = it.blurb || it.summary || '';
+  const lk = $('.surprise-link', surpriseModal);
+  if (it.link) { lk.href = it.link; lk.hidden = false; } else lk.hidden = true;
+}
+function openSurprise() { if (surpriseModal) { rollSurprise(); surpriseModal.hidden = false; } }
+function closeSurprise() { if (surpriseModal) surpriseModal.hidden = true; }
+
 /* ---------- EXPORT / IMPORT ---------- */
 function exportJson() {
   const blob = new Blob([JSON.stringify(items, null, 2)], { type: 'application/json' });
@@ -561,6 +585,15 @@ $('#suggest-cancel').addEventListener('click', closeSuggest);
 suggestModal.addEventListener('click', e => { if (e.target === suggestModal) closeSuggest(); });
 $('#suggest-title').addEventListener('keydown', e => { if (e.key === 'Enter') sendSuggest(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !suggestModal.hidden) closeSuggest(); });
+
+const surpriseBtn = $('#surprise');
+if (surpriseBtn) surpriseBtn.addEventListener('click', openSurprise);
+if ($('#surprise-again')) $('#surprise-again').addEventListener('click', rollSurprise);
+if ($('#surprise-close')) $('#surprise-close').addEventListener('click', closeSurprise);
+if (surpriseModal) {
+  surpriseModal.addEventListener('click', e => { if (e.target === surpriseModal) closeSurprise(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !surpriseModal.hidden) closeSurprise(); });
+}
 
 /* ---------- TYPE SUBPAGE (e.g. /books/) ---------- */
 function applyForcedType() {

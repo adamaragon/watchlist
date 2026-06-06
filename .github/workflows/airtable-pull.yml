@@ -32,12 +32,12 @@ jobs:
         run: python3 scripts/airtable_pull.py
       - name: Commit changes (if any)
         run: |
-          if git diff --quiet -- data.json; then
+          git add data.json scripts/airtable_snapshot.json
+          if git diff --cached --quiet; then
             echo "No Airtable edits to pull."
           else
             git config user.name "watchlist-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data.json
             git commit -m "Pull edits from Airtable [skip ci]"
             git push
           fi

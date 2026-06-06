@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=21" />
+  <link rel="stylesheet" href="assets/styles.css?v=22" />
 </head>
 <body>
   <header class="topbar">
@@ -60,6 +60,7 @@
         </select>
       </label>
       <div class="actions">
+        <button id="surprise" class="btn" type="button" title="Pick a random game from the backlog">🎲 <span class="surprise-label">Surprise</span></button>
         <button id="add" class="btn btn-primary" type="button"><span aria-hidden="true">+</span> <span class="add-label">Add</span></button>
         <button id="export" class="btn owner-only" type="button">Export</button>
         <label class="btn import owner-only">
@@ -120,6 +121,7 @@
           <h2 class="title" contenteditable="true" spellcheck="false"></h2>
           <span class="year"></span>
         </div>
+        <span class="playtime" aria-label="playtime"></span>
         <div class="byline"></div>
         <p class="blurb" contenteditable="true"></p>
         <div class="genres" aria-label="Genres"></div>
@@ -153,12 +155,31 @@
     </div>
   </div>
 
+  <div id="surprise-modal" class="modal" hidden>
+    <div class="modal-card surprise-card" role="dialog" aria-modal="true" aria-labelledby="surprise-h">
+      <h3 id="surprise-h">🎲 Tonight, play…</h3>
+      <div class="surprise-pick">
+        <img id="surprise-poster" alt="" />
+        <div class="surprise-meta">
+          <div class="surprise-title"></div>
+          <div class="surprise-year"></div>
+          <p class="surprise-blurb"></p>
+          <a class="surprise-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Open in store ↗</a>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="surprise-again" class="btn" type="button">🎲 Roll again</button>
+        <button id="surprise-close" class="btn btn-primary" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <span class="count" id="count" aria-live="polite"></span>
     <span class="dot">·</span>
     <span class="footer-note">drag to reorder · click title or blurb to edit</span>
   </footer>
 
-  <script type="module" src="assets/app.js?v=21"></script>
+  <script type="module" src="assets/app.js?v=22"></script>
 </body>
 </html>
