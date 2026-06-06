@@ -270,6 +270,8 @@ body {
   background: transparent;
   transition: transform .35s var(--ease);
   isolation: isolate;
+  content-visibility: auto;             /* skip layout/paint for off-screen cards */
+  contain-intrinsic-size: 190px 460px;  /* reserved placeholder so scroll stays stable */
 }
 body[data-owner="true"] .card { cursor: grab; }
 body[data-owner="true"] .card:active { cursor: grabbing; }
@@ -294,7 +296,8 @@ body[data-owner="true"] .card:active { cursor: grabbing; }
   transform-style: preserve-3d;
   transform: rotateY(-25deg);
   transition: transform .5s var(--ease);
-  will-change: transform;
+  /* will-change removed: 1500+ always-on compositor layers was the cost; the
+     browser promotes the layer on hover/transition on demand instead. */
 }
 /* ground shadow under the standing object */
 .stage::after {
@@ -428,9 +431,7 @@ body[data-owner="true"] .card:active { cursor: grabbing; }
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text);
-  background: rgba(13,11,16,0.72);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(13,11,16,0.86);
   padding: 4px 8px;
   border-radius: 100px;
   border: 1px solid rgba(255,255,255,0.08);
@@ -467,12 +468,11 @@ body[data-owner="false"] .verdict { display: none; }   /* guests can't rate */
 .verdict button {
   width: 30px; height: 30px;
   border-radius: 50%;
-  background: rgba(13,11,16,0.78);
+  background: rgba(13,11,16,0.9);
   border: 1px solid rgba(255,255,255,0.12);
   font-size: 15px; line-height: 1;
   cursor: pointer; padding: 0;
   display: flex; align-items: center; justify-content: center;
-  backdrop-filter: blur(6px);
   filter: grayscale(0.4);
   transition: transform .15s var(--ease), background .2s var(--ease), filter .2s var(--ease), border-color .2s var(--ease);
 }
@@ -511,12 +511,11 @@ body[data-owner="false"][data-voting="on"] .gvote {
   font-size: 10px;
   letter-spacing: 0.06em;
   color: var(--text);
-  background: rgba(13,11,16,0.82);
+  background: rgba(13,11,16,0.92);
   border: 1px solid rgba(255,255,255,0.14);
   border-radius: 100px;
   padding: 5px 9px;
   cursor: pointer;
-  backdrop-filter: blur(6px);
   transition: background .18s var(--ease), border-color .18s var(--ease), transform .12s var(--ease);
 }
 .gvote button:hover { transform: scale(1.06); background: rgba(13,11,16,0.95); }
