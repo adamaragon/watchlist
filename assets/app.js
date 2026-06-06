@@ -6,6 +6,7 @@ let tallies = {};   // { item_id: {up,down,net} } from Airtable
 const LS_KEY      = 'watchlist.v9';   /* bumped: 100% posters, rating/verdict system, owner gate */
 const LS_SORT_KEY = 'watchlist.sort';
 const LS_OWNER    = 'watchlist.owner';
+const LS_INTRO    = 'watchlist.introSeen';
 const $ = (s, r=document) => r.querySelector(s);
 const grid    = $('#grid');
 const tpl     = $('#card-tpl');
@@ -39,6 +40,15 @@ function applyOwnerMode() {
   if (note) note.textContent = isOwner
     ? 'drag to reorder · click title or blurb to edit · 👍/👎 to rate'
     : 'browse · filter · suggest a title';
+  applyIntro();
+}
+
+/* Guest intro — landing page only, hidden for the owner and once dismissed. */
+function applyIntro() {
+  const intro = $('#intro');
+  if (!intro) return;
+  if (window.WL_TYPE || window.WL_VIEW) { intro.remove(); return; }  // not on shared sub-lists
+  intro.hidden = isOwner || localStorage.getItem(LS_INTRO) === '1';
 }
 async function toggleOwner() {
   if (isOwner) { isOwner = false; localStorage.removeItem(LS_OWNER); applyOwnerMode(); render(); return; }
@@ -538,6 +548,11 @@ $('#add').addEventListener('click', addManual);
 $('#export').addEventListener('click', exportJson);
 $('#import').addEventListener('change', e => e.target.files[0] && importJson(e.target.files[0]));
 $('#lock').addEventListener('click', toggleOwner);
+const introDismiss = $('#intro-dismiss');
+if (introDismiss) introDismiss.addEventListener('click', () => {
+  localStorage.setItem(LS_INTRO, '1');
+  const i = $('#intro'); if (i) i.hidden = true;
+});
 $('#suggest-send').addEventListener('click', sendSuggest);
 $('#suggest-cancel').addEventListener('click', closeSuggest);
 suggestModal.addEventListener('click', e => { if (e.target === suggestModal) closeSuggest(); });

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/styles.css?v=19" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20" />
 </head>
 <body>
   <header class="topbar">
@@ -70,6 +70,20 @@
       </div>
     </div>
   </header>
+
+  <aside id="intro" class="intro" hidden>
+    <div class="intro-body">
+      <button id="intro-dismiss" class="intro-x" type="button" aria-label="Dismiss intro">×</button>
+      <h2 class="intro-h">A private marquee — browse freely.</h2>
+      <p class="intro-p">Everything I'm watching, playing, and reading, gathered in one place. As a guest you can:</p>
+      <ul class="intro-list">
+        <li><strong>Browse &amp; filter</strong> — search by title or tag, or narrow by type and status.</li>
+        <li><strong>👍 / 👎 a title</strong> — what guests love rises into <a href="/watchlist/recommended/">★ Recommended by Friends</a>.</li>
+        <li><strong>+ Suggest</strong> — spotted something I should add? Send it over.</li>
+      </ul>
+      <p class="intro-note">Rating and editing are owner-only — but your votes and suggestions are always welcome.</p>
+    </div>
+  </aside>
 
   <main id="grid" class="grid" aria-live="polite" aria-label="Watchlist items"></main>
 
@@ -146,6 +160,6 @@
   </footer>
 
   <script>window.WL_TYPE='book';window.WL_DATA="../data.json";window.WL_BASE="../";</script>
-  <script type="module" src="../assets/app.js?v=19"></script>
+  <script type="module" src="../assets/app.js?v=20"></script>
 </body>
 </html>

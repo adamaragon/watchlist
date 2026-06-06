@@ -871,6 +871,57 @@ body[data-owner="false"][data-voting="on"] .gvote {
 .count { color: var(--text); }
 .dot { opacity: 0.4; }
 
+/* ---------- GUEST INTRO ---------- */
+.intro {
+  max-width: 1800px;
+  margin: 28px auto 0;
+  padding: 0 clamp(20px, 4vw, 56px);
+}
+.intro[hidden] { display: none; }
+.intro-body {
+  position: relative;
+  background: linear-gradient(120deg, rgba(232,117,74,0.09) 0%, rgba(217,178,106,0.06) 100%);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 18px 48px 18px 22px;
+  animation: card-in .35s var(--ease) both;
+}
+.intro-h {
+  font-family: var(--font-display);
+  font-style: italic; font-weight: 400;
+  font-variation-settings: "opsz" 80, "SOFT" 30;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.1;
+  margin: 0 0 6px;
+  color: var(--text);
+}
+.intro-p { margin: 0 0 10px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.intro-list {
+  margin: 0; padding: 0; list-style: none;
+  display: flex; flex-wrap: wrap; gap: 6px 24px;
+}
+.intro-list li { color: var(--muted); font-size: 13.5px; line-height: 1.45; }
+.intro-list strong { color: var(--text); font-weight: 600; }
+.intro-list a { color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(217,178,106,0.4); }
+.intro-list a:hover { color: #f0cd86; border-bottom-color: var(--gold); }
+.intro-note {
+  margin: 12px 0 0;
+  font-family: var(--font-mono); font-size: 10.5px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--muted); opacity: 0.72;
+}
+.intro-x {
+  position: absolute; top: 12px; right: 14px;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--line);
+  color: var(--muted); cursor: pointer;
+  font-size: 17px; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  transition: color .2s var(--ease), border-color .2s var(--ease), background .2s var(--ease);
+}
+.intro-x:hover { color: var(--text); border-color: var(--muted); background: var(--surface-2); }
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 600px) {
   .grid {
