@@ -77,12 +77,39 @@ const TYPE_META = {
 
 /* ---------- LOAD / PERSIST ---------- */
 async function load() {
-  const saved = localStorage.getItem(LS_KEY);
-  if (saved) { items = JSON.parse(saved); return; }
+  /* Always pull canonical data.json so freshly-added items appear on every
+     deploy, then overlay the owner's locally-saved ratings/edits (by id) so
+     in-browser work is never lost. Replaces the old "cache wins forever"
+     behaviour that hid new data.json items from returning visitors. */
+  let canonical = [];
   try {
     const r = await fetch(window.WL_DATA || 'data.json', { cache: 'no-store' });
-    items = r.ok ? await r.json() : [];
-  } catch { items = []; }
+    canonical = r.ok ? await r.json() : [];
+  } catch { canonical = []; }
+
+  if (!canonical.length) {              /* offline / fetch failed — use cache */
+    try { items = JSON.parse(localStorage.getItem(LS_KEY) || '[]') || []; }
+    catch { items = []; }
+    return;
+  }
+
+  try {                                 /* overlay owner's local ratings/edits */
+    const saved = JSON.parse(localStorage.getItem(LS_KEY) || 'null');
+    if (Array.isArray(saved)) {
+      const prev = new Map(saved.filter(p => p && p.id).map(p => [p.id, p]));
+      for (const it of canonical) {
+        const p = prev.get(it.id);
+        if (!p) continue;
+        if (p.verdict !== undefined && p.verdict !== null) it.verdict = p.verdict;
+        if (p.status) it.status = p.status;
+        if (typeof p.blurb === 'string' && p.blurb.trim()) it.blurb = p.blurb;
+        if (typeof p.title === 'string' && p.title.trim()) it.title = p.title;
+      }
+    }
+  } catch { /* corrupt cache — ignore, use canonical as-is */ }
+
+  items = canonical;
+  persist();
 }
 
 function persist() { localStorage.setItem(LS_KEY, JSON.stringify(items)); }
