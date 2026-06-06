@@ -213,7 +213,7 @@ function card(it) {
   /* poster or placeholder */
   const img = $('.poster img', node);
   if (hasPoster) {
-    img.src = it.poster;
+    img.src = (window.WL_BASE || '') + it.poster;
     img.alt = it.title;
   } else {
     img.removeAttribute('src');
