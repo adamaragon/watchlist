@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css?v=13" />
+  <link rel="stylesheet" href="assets/styles.css?v=14" />
 </head>
 <body>
   <header class="topbar">
@@ -23,6 +23,7 @@
         <a href="/watchlist/shows/">Shows</a>
         <a href="/watchlist/games/">Games</a>
         <a href="/watchlist/books/">Books</a>
+        <a href="/watchlist/recommended/">★ Friends</a>
       </nav>
     </div>
     <div class="controls" role="toolbar" aria-label="Filters and actions">
@@ -88,11 +89,16 @@
           <div class="edge-top" aria-hidden="true"></div>
         </div>
         <span class="type"></span>
+        <span class="rec-badge" aria-hidden="true"></span>
         <div class="verdict" role="group" aria-label="Rate">
           <button class="v-love" type="button" title="Loved it"         aria-label="Loved it">⭐</button>
           <button class="v-up"   type="button" title="Liked it"         aria-label="Liked it">👍</button>
           <button class="v-down" type="button" title="Did not like it"  aria-label="Did not like it">👎</button>
           <button class="v-skip" type="button" title="Not interested"   aria-label="Not interested">🚫</button>
+        </div>
+        <div class="gvote" role="group" aria-label="Recommend">
+          <button class="gv-up"   type="button" title="Recommend this">👍 Rec</button>
+          <button class="gv-down" type="button" title="Don't recommend">👎</button>
         </div>
       </div>
       <div class="meta">
@@ -139,6 +145,6 @@
     <span class="footer-note">drag to reorder · click title or blurb to edit</span>
   </footer>
 
-  <script type="module" src="assets/app.js?v=13"></script>
+  <script type="module" src="assets/app.js?v=14"></script>
 </body>
 </html>

@@ -1,4 +1,7 @@
 import { applyFilters } from './lib/filters.js';
+import { isVotingEnabled, myVote, castVote, fetchTallies } from './votes.js';
+
+let tallies = {};   // { item_id: {up,down,net} } from Airtable
 
 const LS_KEY      = 'watchlist.v9';   /* bumped: 100% posters, rating/verdict system, owner gate */
 const LS_SORT_KEY = 'watchlist.sort';
@@ -111,6 +114,25 @@ function render() {
   const view = applySort(filtered);
   grid.replaceChildren();
 
+  /* friends' recommendations (net positive votes), best first */
+  const recommended = view
+    .filter(it => (tallies[it.id] && tallies[it.id].net > 0))
+    .sort((a, b) => tallies[b.id].net - tallies[a.id].net);
+
+  /* dedicated /recommended/ page */
+  if (window.WL_VIEW === 'recommended') {
+    if (!recommended.length) {
+      const e = document.createElement('div');
+      e.className = 'empty-state';
+      e.innerHTML = `<div class="empty-glyph">🌟</div><p class="empty-msg">No friend recommendations yet.</p><p class="empty-hint">Votes show up here once people weigh in.</p>`;
+      grid.appendChild(e);
+    } else {
+      grid.appendChild(buildSection('Recommended by Friends', recommended, { seen: 'rec', glyph: '🌟' }));
+    }
+    if (countEl) countEl.textContent = `${recommended.length} recommended`;
+    return;
+  }
+
   /* partition by verdict */
   const watch = [], loved = [], liked = [], disliked = [], skipped = [];
   for (const it of view) {
@@ -152,6 +174,8 @@ function render() {
     if (disliked.length) grid.appendChild(buildSection('Seen It · Did Not Like', disliked, { seen: 'disliked', glyph: '👎', collapsed: true }));
     /* 4) Not Interested — owner only, collapsed (kept in db, hidden from guests) */
     if (isOwner && skipped.length) grid.appendChild(buildSection('Not Interested', skipped, { seen: 'skip', glyph: '🚫', collapsed: true }));
+    /* 5) Recommended by Friends — cross-cut highlight (vote tallies) */
+    if (recommended.length) grid.appendChild(buildSection('Recommended by Friends', recommended, { seen: 'rec', glyph: '🌟' }));
   }
 
   if (countEl) {
@@ -295,6 +319,33 @@ function card(it) {
   $('.v-up',   node).addEventListener('click', () => setVerdict('up'));
   $('.v-down', node).addEventListener('click', () => setVerdict('down'));
   $('.v-skip', node).addEventListener('click', () => setVerdict('skip'));
+
+  /* friends' recommendation badge (vote tally) */
+  const t = tallies[it.id];
+  const badge = $('.rec-badge', node);
+  if (badge) { if (t && t.net > 0) badge.textContent = `🌟 ${t.net}`; else badge.remove(); }
+
+  /* guest vote buttons (Recommend / Don't) — shown only when voting enabled + guest */
+  const gv = $('.gvote', node);
+  if (gv) {
+    if (!isVotingEnabled()) {
+      gv.remove();
+    } else {
+      const mine = myVote(it.id);
+      gv.dataset.vote = mine || '';
+      const onVote = async (v) => {
+        const prev = myVote(it.id);
+        const next = await castVote(it, v);
+        const tl = tallies[it.id] || { up: 0, down: 0, net: 0 };
+        if (prev === 'up') tl.up--; if (prev === 'down') tl.down--;
+        if (next === 'up') tl.up++; if (next === 'down') tl.down++;
+        tl.net = tl.up - tl.down; tallies[it.id] = tl;
+        render();
+      };
+      $('.gv-up', gv).addEventListener('click', () => onVote('up'));
+      $('.gv-down', gv).addEventListener('click', () => onVote('down'));
+    }
+  }
 
   /* keyboard: Enter on title moves focus to blurb */
   $('.title', node).addEventListener('keydown', e => {
@@ -468,6 +519,11 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && !suggestMo
 
 /* ---------- TYPE SUBPAGE (e.g. /books/) ---------- */
 function applyForcedType() {
+  if (window.WL_VIEW === 'recommended') {
+    document.title = 'Watchlist — Recommended by Friends';
+    const sub = $('.brand-sub'); if (sub) sub.textContent = 'recommended by friends';
+    return;
+  }
   const t = window.WL_TYPE;
   if (!t) return;
   const sel = $('#type');
@@ -482,4 +538,7 @@ function applyForcedType() {
   if (sub) sub.textContent = label;
 }
 
-await load(); populateTypeFilter(); applyForcedType(); applyOwnerMode(); render();
+await load(); populateTypeFilter(); applyForcedType(); applyOwnerMode();
+document.body.dataset.voting = isVotingEnabled() ? 'on' : 'off';
+render();
+if (isVotingEnabled()) { tallies = await fetchTallies(); render(); }
