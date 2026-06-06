@@ -77,7 +77,7 @@ async function load() {
   const saved = localStorage.getItem(LS_KEY);
   if (saved) { items = JSON.parse(saved); return; }
   try {
-    const r = await fetch('data.json', { cache: 'no-store' });
+    const r = await fetch(window.WL_DATA || 'data.json', { cache: 'no-store' });
     items = r.ok ? await r.json() : [];
   } catch { items = []; }
 }
@@ -223,6 +223,10 @@ function card(it) {
 
   /* type badge */
   $('.type', node).textContent = type;
+
+  /* 3D spine label */
+  const spineT = $('.spine-title', node);
+  if (spineT) spineT.textContent = it.title;
 
   /* year + title + blurb (inline-edit is owner-only) */
   $('.year',  node).textContent = it.year || '';
@@ -462,4 +466,20 @@ suggestModal.addEventListener('click', e => { if (e.target === suggestModal) clo
 $('#suggest-title').addEventListener('keydown', e => { if (e.key === 'Enter') sendSuggest(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !suggestModal.hidden) closeSuggest(); });
 
-await load(); populateTypeFilter(); applyOwnerMode(); render();
+/* ---------- TYPE SUBPAGE (e.g. /books/) ---------- */
+function applyForcedType() {
+  const t = window.WL_TYPE;
+  if (!t) return;
+  const sel = $('#type');
+  if (sel) {
+    sel.value = t;
+    const field = sel.closest('.field');
+    if (field) field.style.display = 'none';   // lock + hide the type control
+  }
+  const label = TYPE_LABEL[t] || t;
+  document.title = `Watchlist — ${label}`;
+  const sub = $('.brand-sub');
+  if (sub) sub.textContent = label;
+}
+
+await load(); populateTypeFilter(); applyForcedType(); applyOwnerMode(); render();

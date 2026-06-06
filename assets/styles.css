@@ -106,6 +106,29 @@ body {
   border-left: 1px solid var(--line);
 }
 
+/* ---------- PAGE NAV (shareable type lists) ---------- */
+.pagenav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: auto;
+  align-self: center;
+}
+.pagenav a {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  transition: color .18s var(--ease), border-color .18s var(--ease), background .18s var(--ease);
+}
+.pagenav a:hover { color: var(--text); border-color: var(--accent); background: var(--surface); }
+@media (max-width: 600px) { .pagenav { margin-left: 0; width: 100%; } }
+
 /* ---------- CONTROLS ---------- */
 .controls {
   display: flex;
@@ -204,8 +227,9 @@ body {
 }
 .section-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 28px 22px;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 48px 34px;
+  perspective: 2000px;
 }
 
 /* ---------- SECTION HEADERS ---------- */
@@ -250,16 +274,52 @@ body {
 body[data-owner="true"] .card { cursor: grab; }
 body[data-owner="true"] .card:active { cursor: grabbing; }
 
-.poster {
+/* ---------- 3D OBJECT (items on a shelf) ---------- */
+/* per-type thickness + spine colour */
+.card { --thick: 24px; --spine-a: #2a2333; --spine-b: #15111c; }
+.card[data-type="movie"] { --thick: 14px; --spine-a: #2456b8; --spine-b: #102a63; } /* Blu-ray case */
+.card[data-type="show"]  { --thick: 17px; --spine-a: #1b7d77; --spine-b: #0c423f; } /* DVD case */
+.card[data-type="game"]  { --thick: 28px; --spine-a: #8a3d1c; --spine-b: #3d1608; } /* game box */
+.card[data-type="book"]  { --thick: 34px; --spine-a: #6a4a26; --spine-b: #2d2010; } /* book */
+
+.stage {
   position: relative;
   aspect-ratio: 2 / 3;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  background:
-    repeating-linear-gradient(45deg, #1f1a26 0 2px, #181420 2px 8px);
-  box-shadow: var(--shadow-card);
-  transition: box-shadow .35s var(--ease), transform .35s var(--ease);
+  perspective: 1400px;
+  transition: transform .45s var(--ease);
 }
+.obj {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform: rotateY(-25deg);
+  transition: transform .5s var(--ease);
+  will-change: transform;
+}
+/* ground shadow under the standing object */
+.stage::after {
+  content: "";
+  position: absolute;
+  left: 4%; right: 14%; bottom: -10px; height: 22px;
+  background: radial-gradient(ellipse at 45% 50%, rgba(0,0,0,0.6), transparent 70%);
+  transform: translateZ(calc(var(--thick) / -2));
+  filter: blur(3px);
+  z-index: -1;
+}
+
+/* FRONT face (cover) */
+.poster {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 2px 5px 5px 2px;
+  background: repeating-linear-gradient(45deg, #1f1a26 0 2px, #181420 2px 8px);
+  box-shadow: var(--shadow-card);
+  transform: translateZ(calc(var(--thick) / 2));
+  backface-visibility: hidden;
+}
+/* page-edge sheen on the right of cases/books */
+.poster::after { } /* reserved (status check uses it) */
 .poster img {
   position: absolute;
   inset: 0;
@@ -267,9 +327,49 @@ body[data-owner="true"] .card:active { cursor: grabbing; }
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform .6s var(--ease), filter .35s var(--ease);
+  transition: filter .35s var(--ease);
 }
 .poster img[src=""], .poster img:not([src]) { opacity: 0; }
+
+/* LEFT face (spine) */
+.spine {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: var(--thick);
+  background: linear-gradient(90deg, var(--spine-a) 0%, var(--spine-b) 60%, #000 100%);
+  transform-origin: left center;
+  transform: rotateY(-90deg) translateX(calc(var(--thick) / -2));
+  border-radius: 2px 0 0 2px;
+  box-shadow: inset -6px 0 12px rgba(0,0,0,0.5), inset 2px 0 2px rgba(255,255,255,0.12);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.spine-title {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.82);
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  max-height: 88%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+/* paper "pages" block behind the cover for books (right edge) */
+.edge-top {
+  position: absolute;
+  top: 0; right: 0; height: 100%;
+  width: calc(var(--thick) - 4px);
+  transform-origin: right center;
+  transform: rotateY(90deg) translateX(calc(var(--thick) / 2));
+  background: repeating-linear-gradient(0deg, #d8cdb6 0 1px, #c2b594 1px 2px);
+  opacity: 0;
+}
+.card[data-type="book"] .edge-top { opacity: 0.9; }
 
 /* ---------- PLACEHOLDER (posterless cards) ---------- */
 .poster-placeholder {
@@ -566,13 +666,10 @@ body[data-owner="false"] .owner-only { display: none; }
   animation: card-in .25s var(--ease) both;
 }
 
-/* ---------- HOVER DELIGHT ---------- */
-.card:hover .poster {
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-4px);
-}
-.card:hover .poster img { transform: scale(1.04); }
-.card:hover .scrim { opacity: 0.8; }
+/* ---------- HOVER DELIGHT (settle toward face-on + lift) ---------- */
+.card:hover .obj { transform: rotateY(-9deg) translateY(-6px); }
+.card:hover .poster { box-shadow: var(--shadow-hover); }
+.card:hover .scrim { opacity: 0.82; }
 
 /* ---------- STATUS STATES ---------- */
 .card[data-status="todo"] {}
