@@ -1,7 +1,7 @@
 /* Guest voting via Airtable REST (no backend/proxy).
  * One vote per browser per item (tracked in localStorage with the record id,
  * so a change PATCHes and a retract DELETEs — keeps tallies clean). */
-import { AIRTABLE } from './airtable-config.js';
+import { AIRTABLE } from './airtable-config.js?v=16';
 
 const LSV = 'watchlist.votes';
 const enabled = () => !!(AIRTABLE.PAT && AIRTABLE.BASE);

@@ -16,8 +16,22 @@ BASE = os.environ.get("AIRTABLE_BASE_ID")
 TABLE = os.environ.get("AIRTABLE_TABLE", "Watchlist")
 DATA = os.path.join(os.path.dirname(__file__), "..", "data.json")
 
+# Fallback: read the same public config the website uses, so the daily GitHub
+# Action needs NO repo secrets — the token is already public in airtable-config.js.
 if not PAT or not BASE:
-    print("ERROR: set AIRTABLE_PAT and AIRTABLE_BASE_ID", file=sys.stderr)
+    import re
+    cfg = os.path.join(os.path.dirname(__file__), "..", "assets", "airtable-config.js")
+    try:
+        txt = open(cfg).read()
+        if not PAT:
+            m = re.search(r"PAT:\s*'([^']*)'", txt);  PAT = m.group(1) if m else PAT
+        if not BASE:
+            m = re.search(r"BASE:\s*'([^']*)'", txt); BASE = m.group(1) if m else BASE
+    except OSError:
+        pass
+
+if not PAT or not BASE:
+    print("ERROR: set AIRTABLE_PAT + AIRTABLE_BASE_ID (env) or fill assets/airtable-config.js", file=sys.stderr)
     sys.exit(1)
 
 def field_map(it):

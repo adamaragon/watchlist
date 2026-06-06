@@ -35803,5 +35803,643 @@
     "recovered": true,
     "source": "kindle",
     "author": "Gaiman, Neil"
+  },
+  {
+    "id": "book-of-demons",
+    "title": "Book of Demons",
+    "type": "game",
+    "year": 2018,
+    "blurb": "Deck-building dungeon crawler with papercraft aesthetic.",
+    "poster": "posters/book-of-demons.jpg",
+    "link": "https://store.steampowered.com/app/449960/",
+    "tags": [
+      "Action RPG",
+      "PC",
+      "Switch"
+    ],
+    "rating": 3.6,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "all-the-dust-that-falls",
+    "title": "All the Dust That Falls",
+    "type": "book",
+    "year": null,
+    "blurb": "Dark LitRPG mentioned in genre discussions.",
+    "poster": "posters/all-the-dust-that-falls.jpg",
+    "link": "",
+    "tags": [
+      "Dark LitRPG / Dystopian"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "mountain-of-mirrors",
+    "title": "Mountain of Mirrors",
+    "type": "book",
+    "year": 1982,
+    "blurb": "Elf hero rescues companions in icy cavern (Endless Quest #2).",
+    "poster": "posters/mountain-of-mirrors.jpg",
+    "link": "https://openlibrary.org/works/OL15844181W",
+    "tags": [
+      "Interactive Fantasy"
+    ],
+    "rating": 3.6,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "growing-my-grandpa",
+    "title": "Growing My Grandpa",
+    "type": "game",
+    "year": 2022,
+    "blurb": "Raise a grotesque basement creature in this indie horror sim.",
+    "poster": "posters/growing-my-grandpa.jpg",
+    "link": "https://store.steampowered.com/app/1986880/",
+    "tags": [
+      "Horror Adventure",
+      "PC"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "brazilian-drug-dealer-3",
+    "title": "Brazilian Drug Dealer 3",
+    "type": "game",
+    "year": 2024,
+    "blurb": "Quake-style ultraviolence with wild Brazilian themes.",
+    "poster": "posters/brazilian-drug-dealer-3.jpg",
+    "link": "https://store.steampowered.com/app/3191050/",
+    "tags": [
+      "Retro FPS",
+      "PC"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "return-to-brookmere",
+    "title": "Return to Brookmere",
+    "type": "book",
+    "year": 1982,
+    "blurb": "Explore cursed ruins as elf prince (Endless Quest #4).",
+    "poster": "posters/return-to-brookmere.jpg",
+    "link": "https://openlibrary.org/works/OL4652843W",
+    "tags": [
+      "Interactive Fantasy"
+    ],
+    "rating": 3.7,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "alice-madness-returns",
+    "title": "Alice: Madness Returns",
+    "type": "game",
+    "year": 2011,
+    "blurb": "Dark reimagining of Alice in Wonderland with action-platforming.",
+    "poster": "posters/alice-madness-returns.jpg",
+    "link": "https://store.steampowered.com/app/19680/",
+    "tags": [
+      "Action-Adventure",
+      "PC",
+      "PS3",
+      "Xbox 360"
+    ],
+    "rating": 3.8,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "anger-foot",
+    "title": "Anger Foot",
+    "type": "game",
+    "year": 2024,
+    "blurb": "Bass-fueled Devolver shooter with door-kicking action.",
+    "poster": "posters/anger-foot.jpg",
+    "link": "https://store.steampowered.com/app/1978590/",
+    "tags": [
+      "FPS",
+      "PC",
+      "PS5"
+    ],
+    "rating": 4.0,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "katana-zero",
+    "title": "Katana ZERO",
+    "type": "game",
+    "year": 2019,
+    "blurb": "Stylish samurai in a time-loop narrative.",
+    "poster": "posters/katana-zero.jpg",
+    "link": "https://store.steampowered.com/app/460950/",
+    "tags": [
+      "Action / Platformer",
+      "PC",
+      "Switch"
+    ],
+    "rating": 4.2,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "revenge-of-the-rainbow-dragons",
+    "title": "Revenge of the Rainbow Dragons",
+    "type": "book",
+    "year": 1983,
+    "blurb": "Sequel to Pentegarn; face evil wizards (Endless Quest #6).",
+    "poster": "posters/revenge-of-the-rainbow-dragons.jpg",
+    "link": "https://openlibrary.org/works/OL4652844W",
+    "tags": [
+      "Interactive Fantasy"
+    ],
+    "rating": 3.5,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "we-hunt-monsters",
+    "title": "We Hunt Monsters",
+    "type": "book",
+    "year": null,
+    "blurb": "A gritty LitRPG adventure about bounty hunters in a world infested with monsters.",
+    "poster": "posters/we-hunt-monsters.jpg",
+    "link": "",
+    "tags": [
+      "LitRPG / Monster Hunting"
+    ],
+    "rating": 4.2,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "air-marty",
+    "title": "Air Marty",
+    "type": "game",
+    "year": 2019,
+    "blurb": "Surreal comedy adventure; dozens of mini-games on a plane.",
+    "poster": "posters/air-marty.jpg",
+    "link": "https://store.steampowered.com/app/1076880/",
+    "tags": [
+      "Adventure / Mini-Game Collection",
+      "PC"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "bioshock",
+    "title": "BioShock",
+    "type": "game",
+    "year": 2007,
+    "blurb": "Underwater dystopia and philosophical shooter in Rapture.",
+    "poster": "posters/bioshock.jpg",
+    "link": "https://store.steampowered.com/app/8870/",
+    "tags": [
+      "FPS / Immersive Sim",
+      "PC",
+      "PS3",
+      "Xbox 360"
+    ],
+    "rating": 4.8,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "hero-of-washington-square",
+    "title": "Hero of Washington Square",
+    "type": "book",
+    "year": 1983,
+    "blurb": "Cold War spy gamebook from Top Secret RPG (Endless Quest #7).",
+    "poster": "posters/hero-of-washington-square.jpg",
+    "link": "https://openlibrary.org/works/OL16035796W",
+    "tags": [
+      "Interactive Espionage"
+    ],
+    "rating": 2.8,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "hollywood-monsters",
+    "title": "Hollywood Monsters",
+    "type": "game",
+    "year": 1997,
+    "blurb": "Spanish origin; monster mystery game.",
+    "poster": "posters/hollywood-monsters.jpg",
+    "link": "https://en.wikipedia.org/wiki/Hollywood_Monsters_(video_game)",
+    "tags": [
+      "Point-and-click Adventure",
+      "PC"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "golden-kamuy",
+    "title": "Golden Kamuy",
+    "type": "show",
+    "year": 2018,
+    "blurb": "Ainu heritage and treasure hunting in Hokkaido.",
+    "poster": "posters/golden-kamuy.jpg",
+    "link": "https://anilist.co/anime/99699",
+    "tags": [
+      "Historical Adventure",
+      "Anime"
+    ],
+    "rating": 3.9,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "super-sales-on-super-heroes",
+    "title": "Super Sales on Super Heroes",
+    "type": "book",
+    "year": null,
+    "blurb": "LitRPG series by William D. Arand featuring a cunning protagonist who can empower others.",
+    "poster": "posters/super-sales-on-super-heroes.jpg",
+    "link": "https://openlibrary.org/works/OL19448963W",
+    "tags": [
+      "LitRPG / Superhero"
+    ],
+    "rating": 4.2,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "discworld-cd-rom",
+    "title": "Discworld (CD-ROM)",
+    "type": "game",
+    "year": 1995,
+    "blurb": "Eric Idle as Rincewind in a tough adventure game.",
+    "poster": "posters/discworld-cd-rom.jpg",
+    "link": "https://en.wikipedia.org/wiki/Discworld_(video_game)",
+    "tags": [
+      "Point-and-click Comedy",
+      "PC"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "elvira-ii-the-jaws-of-cerberus",
+    "title": "Elvira II: The Jaws of Cerberus",
+    "type": "game",
+    "year": 1992,
+    "blurb": "Rescue Elvira from a cursed studio set.",
+    "poster": "posters/elvira-ii-the-jaws-of-cerberus.jpg",
+    "link": "https://en.wikipedia.org/wiki/Elvira_II%3A_The_Jaws_of_Cerberus",
+    "tags": [
+      "Horror Adventure RPG",
+      "PC"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "lunar-remastered-collection",
+    "title": "Lunar Remastered Collection",
+    "type": "game",
+    "year": 2023,
+    "blurb": "Charming romantic RPGs with classic anime flair.",
+    "poster": "posters/lunar-remastered-collection.jpg",
+    "link": "https://store.steampowered.com/app/3255380/",
+    "tags": [
+      "JRPG",
+      "PC",
+      "Console"
+    ],
+    "rating": 4.0,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "dungeon-of-dread",
+    "title": "Dungeon of Dread",
+    "type": "book",
+    "year": 1982,
+    "blurb": "D&D Endless Quest Book 1; classic beginner fantasy adventure.",
+    "poster": "posters/dungeon-of-dread.jpg",
+    "link": "https://openlibrary.org/works/OL4652856W",
+    "tags": [
+      "Interactive Fantasy"
+    ],
+    "rating": 3.7,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "expedition-33",
+    "title": "Expedition 33",
+    "type": "game",
+    "year": 2024,
+    "blurb": "New Game Plus required; interpret paintings & clues to solve the mystery.",
+    "poster": "posters/expedition-33.jpg",
+    "link": "https://store.steampowered.com/app/1903340/",
+    "tags": [
+      "Cryptic Puzzle RPG",
+      "PC / Console"
+    ],
+    "rating": 4.6,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "empress",
+    "title": "Empress",
+    "type": "book",
+    "year": null,
+    "blurb": "By J.V. Simms. Part of a conquest isekai series featuring kingdom-building elements.",
+    "poster": "posters/empress.jpg",
+    "link": "",
+    "tags": [
+      "LitRPG"
+    ],
+    "rating": 4.0,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "steins-gate",
+    "title": "Steins;Gate",
+    "type": "show",
+    "year": 2011,
+    "blurb": "Time-travel story about microwave phone experiments and consequences.",
+    "poster": "posters/steins-gate.jpg",
+    "link": "https://anilist.co/anime/9253",
+    "tags": [
+      "Sci-fi Thriller",
+      "Anime"
+    ],
+    "rating": 4.5,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "final-fantasy-tactics-remake",
+    "title": "Final Fantasy Tactics (Remake)",
+    "type": "game",
+    "year": 2025,
+    "blurb": "Remake of the classic isometric tactical RPG.",
+    "poster": "posters/final-fantasy-tactics-remake.jpg",
+    "link": "",
+    "tags": [
+      "Tactical RPG"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "disco-elysium",
+    "title": "Disco Elysium",
+    "type": "game",
+    "year": 2019,
+    "blurb": "Political, philosophical detective story.",
+    "poster": "posters/disco-elysium.jpg",
+    "link": "https://store.steampowered.com/app/632470/",
+    "tags": [
+      "Narrative RPG",
+      "PC",
+      "Console"
+    ],
+    "rating": 4.6,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "revolt-of-the-dwarves",
+    "title": "Revolt of the Dwarves",
+    "type": "book",
+    "year": 1983,
+    "blurb": "Stop a dwarven uprising (Endless Quest #5).",
+    "poster": "posters/revolt-of-the-dwarves.jpg",
+    "link": "https://openlibrary.org/works/OL4652845W",
+    "tags": [
+      "Interactive Fantasy"
+    ],
+    "rating": 3.3,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "loop-hero",
+    "title": "Loop Hero",
+    "type": "game",
+    "year": 2021,
+    "blurb": "Build the world as your hero loops through time.",
+    "poster": "posters/loop-hero.jpg",
+    "link": "https://store.steampowered.com/app/1282730/",
+    "tags": [
+      "Deck-builder / Roguelike",
+      "PC",
+      "Switch"
+    ],
+    "rating": 4.1,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "death-gate",
+    "title": "Death Gate",
+    "type": "game",
+    "year": 1994,
+    "blurb": "Based on the Death Gate Cycle; fantasy puzzle-solving journey.",
+    "poster": "posters/death-gate.jpg",
+    "link": "",
+    "tags": [
+      "Fantasy Adventure",
+      "PC"
+    ],
+    "rating": null,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "final-fantasy-vii-crisis-core",
+    "title": "Final Fantasy VII: Crisis Core",
+    "type": "game",
+    "year": 2007,
+    "blurb": "Emotional prequel to FFVII following Zack Fair.",
+    "poster": "posters/final-fantasy-vii-crisis-core.jpg",
+    "link": "https://store.steampowered.com/app/1608070/",
+    "tags": [
+      "Action RPG",
+      "PSP"
+    ],
+    "rating": 4.2,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "pillars-of-pentegarn",
+    "title": "Pillars of Pentegarn",
+    "type": "book",
+    "year": 1982,
+    "blurb": "Wizard needs help to restore kingdom (Endless Quest #3).",
+    "poster": "posters/pillars-of-pentegarn.jpg",
+    "link": "https://openlibrary.org/works/OL4652840W",
+    "tags": [
+      "Interactive Fantasy"
+    ],
+    "rating": 3.6,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
+  },
+  {
+    "id": "american-mcgee-s-alice",
+    "title": "American McGee's Alice",
+    "type": "game",
+    "year": 2000,
+    "blurb": "Original dark twist on the Alice in Wonderland story; cult classic.",
+    "poster": "posters/american-mcgee-s-alice.jpg",
+    "link": "https://en.wikipedia.org/wiki/American_McGee's_Alice",
+    "tags": [
+      "Action-Adventure",
+      "PC"
+    ],
+    "rating": 4.3,
+    "notes": "",
+    "added": "2026-06-05",
+    "status": "todo",
+    "verdict": null,
+    "summary": "",
+    "source": "airtable"
   }
 ]

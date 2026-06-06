@@ -12,7 +12,7 @@
  * Leave PAT or BASE empty to keep voting disabled (no network calls).
  */
 export const AIRTABLE = {
-  PAT: '',                 // e.g. 'patXXXXXXXXXXXXXX.xxxxxxxx...'
-  BASE: '',                // e.g. 'appXXXXXXXXXXXXXX'
+  PAT: '',                       // NOT committed — GitHub secret-scanning blocks a token in-repo
+  BASE: 'appiRs5WrwZtOds9u',     // "Media Library" base id (not sensitive)
   VOTES_TABLE: 'Votes',
 };

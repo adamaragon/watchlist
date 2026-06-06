@@ -1,5 +1,5 @@
-import { applyFilters } from './lib/filters.js';
-import { isVotingEnabled, myVote, castVote, fetchTallies } from './votes.js';
+import { applyFilters } from './lib/filters.js?v=16';
+import { isVotingEnabled, myVote, castVote, fetchTallies } from './votes.js?v=16';
 
 let tallies = {};   // { item_id: {up,down,net} } from Airtable
 
