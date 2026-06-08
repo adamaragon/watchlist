@@ -279,10 +279,10 @@ body[data-owner="true"] .card:active { cursor: grabbing; }
 /* ---------- 3D OBJECT (items on a shelf) ---------- */
 /* per-type thickness + spine colour */
 .card { --thick: 24px; --spine-a: #2a2333; --spine-b: #15111c; }
-.card[data-type="movie"] { --thick: 24px; --spine-a: #2456b8; --spine-b: #102a63; } /* Blu-ray keepcase */
-.card[data-type="show"]  { --thick: 30px; --spine-a: #1b7d77; --spine-b: #0c423f; } /* DVD keepcase */
-.card[data-type="game"]  { --thick: 32px; --spine-a: #8a3d1c; --spine-b: #3d1608; } /* game box */
-.card[data-type="book"]  { --thick: 36px; --spine-a: #6a4a26; --spine-b: #2d2010; } /* book */
+.card[data-type="movie"] { --thick: 38px; --spine-a: #2456b8; --spine-b: #102a63; } /* Blu-ray keepcase */
+.card[data-type="show"]  { --thick: 46px; --spine-a: #1b7d77; --spine-b: #0c423f; } /* DVD keepcase */
+.card[data-type="game"]  { --thick: 50px; --spine-a: #8a3d1c; --spine-b: #3d1608; } /* game box */
+.card[data-type="book"]  { --thick: 58px; --spine-a: #6a4a26; --spine-b: #2d2010; } /* book */
 
 .stage {
   position: relative;
