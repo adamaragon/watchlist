@@ -279,10 +279,10 @@ body[data-owner="true"] .card:active { cursor: grabbing; }
 /* ---------- 3D OBJECT (items on a shelf) ---------- */
 /* per-type thickness + spine colour */
 .card { --thick: 24px; --spine-a: #2a2333; --spine-b: #15111c; }
-.card[data-type="movie"] { --thick: 14px; --spine-a: #2456b8; --spine-b: #102a63; } /* Blu-ray case */
-.card[data-type="show"]  { --thick: 17px; --spine-a: #1b7d77; --spine-b: #0c423f; } /* DVD case */
-.card[data-type="game"]  { --thick: 28px; --spine-a: #8a3d1c; --spine-b: #3d1608; } /* game box */
-.card[data-type="book"]  { --thick: 34px; --spine-a: #6a4a26; --spine-b: #2d2010; } /* book */
+.card[data-type="movie"] { --thick: 24px; --spine-a: #2456b8; --spine-b: #102a63; } /* Blu-ray keepcase */
+.card[data-type="show"]  { --thick: 30px; --spine-a: #1b7d77; --spine-b: #0c423f; } /* DVD keepcase */
+.card[data-type="game"]  { --thick: 32px; --spine-a: #8a3d1c; --spine-b: #3d1608; } /* game box */
+.card[data-type="book"]  { --thick: 36px; --spine-a: #6a4a26; --spine-b: #2d2010; } /* book */
 
 .stage {
   position: relative;
@@ -317,9 +317,33 @@ body[data-owner="true"] .card:active { cursor: grabbing; }
   overflow: hidden;
   border-radius: 2px 5px 5px 2px;
   background: repeating-linear-gradient(45deg, #1f1a26 0 2px, #181420 2px 8px);
-  box-shadow: var(--shadow-card);
+  /* keepcase shell: outer drop, hard black case edge, top light lip, inner vignette */
+  box-shadow:
+    var(--shadow-card),
+    inset 0 0 0 1.5px rgba(0,0,0,0.6),
+    inset 0 1.5px 0 rgba(255,255,255,0.16),
+    inset 0 0 26px rgba(0,0,0,0.32);
   transform: translateZ(calc(var(--thick) / 2));
   backface-visibility: hidden;
+}
+/* clear-plastic sleeve gloss across the cover (hover-independent, 3D-aligned) */
+.obj::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 2px 5px 5px 2px;
+  transform: translateZ(calc(var(--thick) / 2 + 0.2px));
+  background: linear-gradient(
+    113deg,
+    rgba(255,255,255,0.26) 0%,
+    rgba(255,255,255,0.06) 9%,
+    rgba(255,255,255,0) 26%,
+    rgba(255,255,255,0) 70%,
+    rgba(255,255,255,0.05) 90%,
+    rgba(255,255,255,0.12) 100%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 3;
 }
 /* page-edge sheen on the right of cases/books */
 .poster::after { } /* reserved (status check uses it) */
