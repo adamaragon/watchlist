@@ -10,9 +10,17 @@ on:
     - cron: "17 9 * * *"   # 09:17 UTC daily safety net
   workflow_dispatch: {}
 
+permissions:
+  contents: read
+
+concurrency:
+  group: airtable-backup
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

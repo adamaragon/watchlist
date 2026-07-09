@@ -1,9 +1,10 @@
 name: Airtable pull (2-way)
 
 # Pull edits/additions made in Airtable back into data.json. Runs every 2 hours
-# (plus a manual button). The site stays the deletion authority, so this never
-# deletes — it only updates fields and adds new rows. Commits with [skip ci] so
-# it doesn't re-trigger the push-sync (the data already matches Airtable).
+# (plus a manual button). Rows removed in Airtable are mirrored back only when
+# they were previously present in the last successful snapshot, which keeps the
+# deletion path explicit and guarded. Commits with [skip ci] so it doesn't
+# re-trigger the push-sync (the data already matches Airtable).
 on:
   schedule:
     - cron: "0 */2 * * *"
@@ -19,6 +20,7 @@ concurrency:
 jobs:
   pull:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

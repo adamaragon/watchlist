@@ -9,30 +9,55 @@ Env:
 Run locally:  AIRTABLE_PAT=... AIRTABLE_BASE_ID=... python3 scripts/airtable_sync.py
 Runs in CI daily via .github/workflows/airtable-backup.yml
 """
-import json, os, sys, time, urllib.request, urllib.error
+import json, os, socket, sys, time, urllib.error, urllib.parse, urllib.request
 
 PAT = os.environ.get("AIRTABLE_PAT")
 BASE = os.environ.get("AIRTABLE_BASE_ID")
 TABLE = os.environ.get("AIRTABLE_TABLE", "Watchlist")
 DATA = os.path.join(os.path.dirname(__file__), "..", "data.json")
-
-# Fallback: read the same public config the website uses, so the daily GitHub
-# Action needs NO repo secrets — the token is already public in airtable-config.js.
-if not PAT or not BASE:
-    import re
-    cfg = os.path.join(os.path.dirname(__file__), "..", "assets", "airtable-config.js")
-    try:
-        txt = open(cfg).read()
-        if not PAT:
-            m = re.search(r"PAT:\s*'([^']*)'", txt);  PAT = m.group(1) if m else PAT
-        if not BASE:
-            m = re.search(r"BASE:\s*'([^']*)'", txt); BASE = m.group(1) if m else BASE
-    except OSError:
-        pass
+MAX_ATTEMPTS = 4
 
 if not PAT or not BASE:
-    print("ERROR: set AIRTABLE_PAT + AIRTABLE_BASE_ID (env) or fill assets/airtable-config.js", file=sys.stderr)
+    print("ERROR: set AIRTABLE_PAT + AIRTABLE_BASE_ID", file=sys.stderr)
     sys.exit(1)
+
+def request_bytes(req, *, label):
+    last_exc = None
+    for attempt in range(MAX_ATTEMPTS):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "ignore")[:200]
+            if e.code != 429 and e.code < 500:
+                print(f"{label} failed: HTTP {e.code}: {body}", file=sys.stderr)
+                raise
+            last_exc = RuntimeError(f"HTTP {e.code}: {body}")
+            detail = str(last_exc)
+        except (TimeoutError, urllib.error.URLError, socket.timeout, OSError) as e:
+            last_exc = e
+            detail = str(e)
+        if attempt == MAX_ATTEMPTS - 1:
+            print(f"{label} failed after {MAX_ATTEMPTS} attempts: {detail}", file=sys.stderr)
+            raise last_exc
+        print(f"{label} retrying after transient error: {detail}", file=sys.stderr)
+        time.sleep(2 * (attempt + 1))
+
+def validate_local_data(data):
+    seen = set()
+    dupes = set()
+    for idx, item in enumerate(data, start=1):
+        iid = (item.get("id") or "").strip()
+        if not iid:
+            print(f"Local data.json item #{idx} is missing an id.", file=sys.stderr)
+            sys.exit(1)
+        if iid in seen:
+            dupes.add(iid)
+        seen.add(iid)
+    if dupes:
+        sample = ", ".join(sorted(dupes)[:10])
+        print(f"Local data.json has duplicate ids ({len(dupes)}): {sample}", file=sys.stderr)
+        sys.exit(1)
 
 def field_map(it):
     return {
@@ -61,36 +86,26 @@ def post_batch(records):
         "Authorization": f"Bearer {PAT}",
         "Content-Type": "application/json",
     })
-    for attempt in range(4):
-        try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                return len(json.loads(r.read()).get("records", []))
-        except urllib.error.HTTPError as e:
-            msg = e.read().decode("utf-8", "ignore")[:200]
-            if e.code == 429 or e.code >= 500:
-                time.sleep(2 * (attempt + 1)); continue
-            print(f"HTTP {e.code}: {msg}", file=sys.stderr); raise
-        except Exception:
-            if attempt == 3: raise
-            time.sleep(2 * (attempt + 1))
-    return 0
-
-import urllib.parse
+    records_written = len(json.loads(request_bytes(req, label=f"Upsert Airtable batch of {len(records)}"))["records"])
+    if records_written != len(records):
+        print(f"Upsert mismatch: wrote {records_written} of {len(records)} requested records.", file=sys.stderr)
+        sys.exit(1)
+    return records_written
 
 def fetch_all_ids():
     """Return [(recordId, idField)] for every Airtable record (id field only)."""
     base_url = f"https://api.airtable.com/v0/{BASE}/{urllib.parse.quote(TABLE)}"
-    out, offset = [], ""
+    out, offset, page = [], "", 1
     while True:
         u = base_url + "?pageSize=100&fields%5B%5D=id" + (f"&offset={offset}" if offset else "")
         req = urllib.request.Request(u, headers={"Authorization": f"Bearer {PAT}"})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            j = json.loads(r.read())
+        j = json.loads(request_bytes(req, label=f"Fetch Airtable prune page {page}"))
         for rec in j.get("records", []):
             out.append((rec["id"], (rec.get("fields") or {}).get("id")))
         offset = j.get("offset", "")
         if not offset:
             break
+        page += 1
         time.sleep(0.2)
     return out
 
@@ -101,20 +116,15 @@ def delete_records(record_ids):
         qs = "&".join("records[]=" + rid for rid in record_ids[i:i+10])
         req = urllib.request.Request(base_url + "?" + qs, method="DELETE",
                                      headers={"Authorization": f"Bearer {PAT}"})
-        for attempt in range(4):
-            try:
-                with urllib.request.urlopen(req, timeout=30) as r:
-                    n += sum(1 for x in json.loads(r.read()).get("records", []) if x.get("deleted"))
-                break
-            except urllib.error.HTTPError as e:
-                if e.code == 429 or e.code >= 500:
-                    time.sleep(2 * (attempt + 1)); continue
-                raise
+        deleted = json.loads(request_bytes(req, label=f"Delete Airtable stale batch starting at {i + 1}")).get("records", [])
+        n += sum(1 for x in deleted if x.get("deleted"))
         time.sleep(0.2)
     return n
 
 def main():
-    data = json.load(open(DATA))
+    with open(DATA, encoding="utf-8") as fh:
+        data = json.load(fh)
+    validate_local_data(data)
     total = 0
     batch = []
     for it in data:

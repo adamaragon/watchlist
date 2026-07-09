@@ -20,45 +20,90 @@ if not PAT or not BASE:
 
 BASEURL = f"https://api.airtable.com/v0/{BASE}/{urllib.parse.quote(TABLE)}"
 HDR = {"Authorization": f"Bearer {PAT}", "Content-Type": "application/json"}
+MAX_ATTEMPTS = 4
 
 def slugify(s):
     s = re.sub(r'[^a-z0-9]+', '-', (s or '').lower()).strip('-')
     return re.sub(r'-{2,}', '-', s) or 'item'
 
+def request_bytes(req, *, label):
+    last_exc = None
+    for attempt in range(MAX_ATTEMPTS):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "ignore")[:200]
+            if e.code != 429 and e.code < 500:
+                print(f"{label} failed: HTTP {e.code}: {body}", file=sys.stderr)
+                raise
+            last_exc = RuntimeError(f"HTTP {e.code}: {body}")
+            detail = str(last_exc)
+        except (TimeoutError, urllib.error.URLError, socket.timeout, OSError) as e:
+            last_exc = e
+            detail = str(e)
+        if attempt == MAX_ATTEMPTS - 1:
+            print(f"{label} failed after {MAX_ATTEMPTS} attempts: {detail}", file=sys.stderr)
+            raise last_exc
+        print(f"{label} retrying after transient error: {detail}", file=sys.stderr)
+        time.sleep(2 * (attempt + 1))
+
+def write_json(path, payload, **dump_kwargs):
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, **dump_kwargs)
+        fh.write("\n")
+    os.replace(tmp, path)
+
+def validate_local_data(data):
+    seen = set()
+    dupes = set()
+    for idx, item in enumerate(data, start=1):
+        iid = (item.get("id") or "").strip()
+        if not iid:
+            print(f"Local data.json item #{idx} is missing an id.", file=sys.stderr)
+            sys.exit(1)
+        if iid in seen:
+            dupes.add(iid)
+        seen.add(iid)
+    if dupes:
+        sample = ", ".join(sorted(dupes)[:10])
+        print(f"Local data.json has duplicate ids ({len(dupes)}): {sample}", file=sys.stderr)
+        sys.exit(1)
+
+def validate_airtable_ids(records):
+    seen = set()
+    dupes = set()
+    for rec in records:
+        iid = ((rec.get("fields") or {}).get("id") or "").strip()
+        if not iid:
+            continue
+        if iid in seen:
+            dupes.add(iid)
+        seen.add(iid)
+    if dupes:
+        sample = ", ".join(sorted(dupes)[:10])
+        print(f"Airtable contains duplicate non-empty ids ({len(dupes)}): {sample}", file=sys.stderr)
+        sys.exit(1)
+
 def fetch_all():
-    out, offset = [], ""
+    out, offset, page = [], "", 1
     while True:
         u = BASEURL + "?pageSize=100" + (f"&offset={offset}" if offset else "")
         req = urllib.request.Request(u, headers={"Authorization": f"Bearer {PAT}"})
-        for attempt in range(4):
-            try:
-                with urllib.request.urlopen(req, timeout=30) as r:
-                    j = json.loads(r.read())
-                break
-            except urllib.error.HTTPError as e:
-                body = e.read().decode("utf-8", "ignore")[:200]
-                if e.code not in (429,) and e.code < 500:
-                    raise
-                if attempt == 3:
-                    print(f"HTTP {e.code}: {body}", file=sys.stderr)
-                    raise
-            except (TimeoutError, urllib.error.URLError, socket.timeout):
-                if attempt == 3:
-                    raise
-            time.sleep(2 * (attempt + 1))
+        j = json.loads(request_bytes(req, label=f"Fetch Airtable page {page}"))
         out += j.get("records", [])
         offset = j.get("offset", "")
         if not offset: break
+        page += 1
         time.sleep(0.2)
     return out
 
 def patch_id(rid, new_id):
     if DRY: return
     body = json.dumps({"fields": {"id": new_id}}).encode()
-    try:
-        urllib.request.urlopen(urllib.request.Request(f"{BASEURL}/{rid}", data=body, method="PATCH", headers=HDR), timeout=30).read()
-    except Exception as e:
-        print("  id write-back failed:", e, file=sys.stderr)
+    req = urllib.request.Request(f"{BASEURL}/{rid}", data=body, method="PATCH", headers=HDR)
+    request_bytes(req, label=f"Write back Airtable id for record {rid}")
 
 def tracked(f):
     y = f.get("Year")
@@ -92,18 +137,22 @@ def differs(cur, k, v):
 NEVER_BLANK = {"poster", "title", "year", "author", "summary", "blurb", "tags", "type", "source"}
 
 def main():
-    data = json.load(open(DATA))
+    with open(DATA, encoding="utf-8") as fh:
+        data = json.load(fh)
+    validate_local_data(data)
     recs = fetch_all()
+    validate_airtable_ids(recs)
     if not recs or len(recs) < len(data) * 0.5:
         print(f"Pull ABORTED: Airtable returned {len(recs)} vs data.json {len(data)} (too few — likely a fetch error).", file=sys.stderr)
-        sys.exit(0)
+        sys.exit(1)
     current_ids = {(r.get("fields") or {}).get("id") for r in recs if (r.get("fields") or {}).get("id")}
     changed = []
 
     # Deletions: ids in the last snapshot but gone from Airtable now.
     deleted = 0
     try:
-        prev_ids = set(json.load(open(SNAP)))
+        with open(SNAP, encoding="utf-8") as fh:
+            prev_ids = set(json.load(fh))
     except Exception:
         prev_ids = set()
     if prev_ids:
@@ -144,8 +193,8 @@ def main():
 
     if not DRY:
         if updated or added or deleted:
-            json.dump(data, open(DATA, "w"), ensure_ascii=False, indent=2)
-        json.dump(sorted(current_ids), open(SNAP, "w"))
+            write_json(DATA, data, ensure_ascii=False, indent=2)
+        write_json(SNAP, sorted(current_ids))
     print(f"Pull{' (DRY)' if DRY else ''}: updated {updated}, added {added}, deleted {deleted}, total {len(data)}.")
     for t in changed[:30]:
         print("  ~", t)
