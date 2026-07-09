@@ -7,7 +7,7 @@ last snapshot (so a locally-added, not-yet-synced item is never wrongly
 deleted). Set DRY_RUN=1 to report without writing. Runs in CI via
 airtable-pull.yml.
 """
-import json, os, re, sys, time, datetime, urllib.parse, urllib.request
+import datetime, json, os, re, socket, sys, time, urllib.error, urllib.parse, urllib.request
 
 PAT = os.environ.get("AIRTABLE_PAT")
 BASE = os.environ.get("AIRTABLE_BASE_ID")
@@ -29,8 +29,23 @@ def fetch_all():
     out, offset = [], ""
     while True:
         u = BASEURL + "?pageSize=100" + (f"&offset={offset}" if offset else "")
-        with urllib.request.urlopen(urllib.request.Request(u, headers={"Authorization": f"Bearer {PAT}"}), timeout=30) as r:
-            j = json.loads(r.read())
+        req = urllib.request.Request(u, headers={"Authorization": f"Bearer {PAT}"})
+        for attempt in range(4):
+            try:
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    j = json.loads(r.read())
+                break
+            except urllib.error.HTTPError as e:
+                body = e.read().decode("utf-8", "ignore")[:200]
+                if e.code not in (429,) and e.code < 500:
+                    raise
+                if attempt == 3:
+                    print(f"HTTP {e.code}: {body}", file=sys.stderr)
+                    raise
+            except (TimeoutError, urllib.error.URLError, socket.timeout):
+                if attempt == 3:
+                    raise
+            time.sleep(2 * (attempt + 1))
         out += j.get("records", [])
         offset = j.get("offset", "")
         if not offset: break
